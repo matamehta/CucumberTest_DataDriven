@@ -30,8 +30,8 @@ public class UserStepDefinitions implements BaseTest{
  // Navigation steps ------------
 
     //Step to navigate to specified URL
-    @Given("^I am in app homepage")
-    public void I_am_in_app_homepage() throws InterruptedException, FileNotFoundException, YamlException {
+    @Given("^I am in app loginpage")
+    public void I_am_in_app_loginpage() throws InterruptedException, FileNotFoundException, YamlException {
 
         String name= retriveTestdata.YamlFileReader().get("App").get("url");
         navigationObj.navigateTo(name);

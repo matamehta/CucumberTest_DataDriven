@@ -1,0 +1,2317 @@
+[
+  {
+    "source": "^I am in app loginpage",
+    "steps": [
+      {
+        "name": "I am in app loginpage",
+        "aggregatedDurations": {
+          "average": 5.896707989,
+          "median": 5.755886962
+        },
+        "durations": [
+          {
+            "duration": 7.383250574,
+            "location": "CreateEmployee.feature:5"
+          },
+          {
+            "duration": 5.806494547,
+            "location": "CreateEmployee.feature:15"
+          },
+          {
+            "duration": 6.484403065,
+            "location": "CreateEmployee.feature:31"
+          },
+          {
+            "duration": 5.756858856,
+            "location": "CreateEmployee.feature:49"
+          },
+          {
+            "duration": 5.988331231,
+            "location": "CreateEmployee.feature:67"
+          },
+          {
+            "duration": 6.071447801,
+            "location": "CreateEmployee.feature:85"
+          },
+          {
+            "duration": 6.299770393,
+            "location": "CreateEmployee.feature:104"
+          },
+          {
+            "duration": 5.632136238,
+            "location": "CreateEmployee.feature:124"
+          },
+          {
+            "duration": 5.705850658,
+            "location": "CreateEmployee.feature:144"
+          },
+          {
+            "duration": 5.671562888,
+            "location": "CreateEmployee.feature:144"
+          },
+          {
+            "duration": 5.929054004,
+            "location": "DeleteEmp.feature:5"
+          },
+          {
+            "duration": 6.059191138,
+            "location": "DeleteEmp.feature:16"
+          },
+          {
+            "duration": 4.892386717,
+            "location": "DeleteEmp.feature:27"
+          },
+          {
+            "duration": 5.632033536,
+            "location": "DeleteEmp.feature:55"
+          },
+          {
+            "duration": 5.656210059,
+            "location": "EditEmp.feature:6"
+          },
+          {
+            "duration": 6.518233962,
+            "location": "EditEmp.feature:17"
+          },
+          {
+            "duration": 5.705454576,
+            "location": "EditEmp.feature:28"
+          },
+          {
+            "duration": 5.748176754,
+            "location": "EditEmp.feature:48"
+          },
+          {
+            "duration": 5.659240525,
+            "location": "EditEmp.feature:74"
+          },
+          {
+            "duration": 6.174227289,
+            "location": "EditEmp.feature:101"
+          },
+          {
+            "duration": 5.531530106,
+            "location": "EditEmp.feature:116"
+          },
+          {
+            "duration": 5.750052201,
+            "location": "EditEmp.feature:131"
+          },
+          {
+            "duration": 5.610307891,
+            "location": "EditEmp.feature:146"
+          },
+          {
+            "duration": 5.693194514,
+            "location": "Login.feature:5"
+          },
+          {
+            "duration": 5.754915069,
+            "location": "Login.feature:13"
+          },
+          {
+            "duration": 5.816287116,
+            "location": "Login.feature:22"
+          },
+          {
+            "duration": 5.576060144,
+            "location": "Login.feature:33"
+          },
+          {
+            "duration": 6.777893528,
+            "location": "Login.feature:33"
+          },
+          {
+            "duration": 5.885044651,
+            "location": "Login.feature:33"
+          },
+          {
+            "duration": 6.112098947,
+            "location": "Login.feature:49"
+          },
+          {
+            "duration": 5.917825118,
+            "location": "Login.feature:58"
+          },
+          {
+            "duration": 6.047889756,
+            "location": "Login.feature:68"
+          },
+          {
+            "duration": 5.675858252,
+            "location": "Logout.feature:5"
+          },
+          {
+            "duration": 5.56479954,
+            "location": "Logout.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I assert element having (.+) \"(.*?)\" and has class \"(.*?)\" should\\s*((?:not)?)\\s+be present$",
+    "steps": [
+      {
+        "name": "I assert element having id \"bDelete\" and has class \"disabled\" should be present",
+        "aggregatedDurations": {
+          "average": 0.014093974,
+          "median": 0.014093974
+        },
+        "durations": [
+          {
+            "duration": 0.014093974,
+            "location": "DeleteEmp.feature:10"
+          }
+        ]
+      },
+      {
+        "name": "I assert element having id \"bEdit\" and has class \"disabled\" should be present",
+        "aggregatedDurations": {
+          "average": 0.014479861,
+          "median": 0.014479861
+        },
+        "durations": [
+          {
+            "duration": 0.014479861,
+            "location": "EditEmp.feature:11"
+          }
+        ]
+      },
+      {
+        "name": "I assert element having model \"selectedEmployee.firstName\" and has class \"ng-valid-required\" should be present",
+        "aggregatedDurations": {
+          "average": 0.038491005,
+          "median": 0.038491005
+        },
+        "durations": [
+          {
+            "duration": 0.038491005,
+            "location": "EditEmp.feature:34"
+          }
+        ]
+      },
+      {
+        "name": "I assert element having model \"selectedEmployee.lastName\" and has class \"ng-valid-required\" should be present",
+        "aggregatedDurations": {
+          "average": 0.03111118,
+          "median": 0.03111118
+        },
+        "durations": [
+          {
+            "duration": 0.03111118,
+            "location": "EditEmp.feature:35"
+          }
+        ]
+      },
+      {
+        "name": "I assert element having model \"selectedEmployee.startDate\" and has class \"ng-valid-required\" should be present",
+        "aggregatedDurations": {
+          "average": 0.032334543,
+          "median": 0.032334543
+        },
+        "durations": [
+          {
+            "duration": 0.032334543,
+            "location": "EditEmp.feature:36"
+          }
+        ]
+      },
+      {
+        "name": "I assert element having model \"selectedEmployee.email\" and has class \"ng-valid-required\" should be present",
+        "aggregatedDurations": {
+          "average": 0.035471488,
+          "median": 0.035471488
+        },
+        "durations": [
+          {
+            "duration": 0.035471488,
+            "location": "EditEmp.feature:37"
+          }
+        ]
+      },
+      {
+        "name": "I assert element having model \"selectedEmployee.startDate\" and has class \"ng-valid-pattern\" should be present",
+        "aggregatedDurations": {
+          "average": 0.026889822,
+          "median": 0.026889822
+        },
+        "durations": [
+          {
+            "duration": 0.026889822,
+            "location": "EditEmp.feature:109"
+          }
+        ]
+      },
+      {
+        "name": "I assert element having model \"selectedEmployee.startDate\" and has class \"ng-invalid-pattern\" should be present",
+        "aggregatedDurations": {
+          "average": 0.024830872,
+          "median": 0.024830872
+        },
+        "durations": [
+          {
+            "duration": 0.024830872,
+            "location": "EditEmp.feature:124"
+          }
+        ]
+      },
+      {
+        "name": "I assert element having model \"selectedEmployee.email\" and has class \"ng-valid-email\" should be present",
+        "aggregatedDurations": {
+          "average": 0.024972088,
+          "median": 0.024972088
+        },
+        "durations": [
+          {
+            "duration": 0.024972088,
+            "location": "EditEmp.feature:139"
+          }
+        ]
+      },
+      {
+        "name": "I assert element having model \"selectedEmployee.email\" and has class \"ng-invalid-email\" should be present",
+        "aggregatedDurations": {
+          "average": 0.023510471,
+          "median": 0.023510471
+        },
+        "durations": [
+          {
+            "duration": 0.023510471,
+            "location": "EditEmp.feature:154"
+          }
+        ]
+      },
+      {
+        "name": "I assert element having model \"user.name\" and has class \"ng-invalid-required\" should be present",
+        "aggregatedDurations": {
+          "average": 0.061383375,
+          "median": 0.061383375
+        },
+        "durations": [
+          {
+            "duration": 0.061383375,
+            "location": "Logout.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I take screenshot$",
+    "steps": [
+      {
+        "name": "I take screenshot",
+        "aggregatedDurations": {
+          "average": 0.233428514,
+          "median": 0.193343093
+        },
+        "durations": [
+          {
+            "duration": 0.308185168,
+            "location": "DeleteEmp.feature:9"
+          },
+          {
+            "duration": 0.15577905,
+            "location": "DeleteEmp.feature:42"
+          },
+          {
+            "duration": 0.154943463,
+            "location": "DeleteEmp.feature:44"
+          },
+          {
+            "duration": 0.152334754,
+            "location": "DeleteEmp.feature:70"
+          },
+          {
+            "duration": 0.289955925,
+            "location": "DeleteEmp.feature:72"
+          },
+          {
+            "duration": 0.193343093,
+            "location": "EditEmp.feature:10"
+          },
+          {
+            "duration": 0.379458149,
+            "location": "EditEmp.feature:89"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I wait (\\d+) ms for element having (.+) \"(.*?)\" to be enabled$",
+    "steps": [
+      {
+        "name": "I wait 10 ms for element having id \"bAdd\" to be enabled",
+        "aggregatedDurations": {
+          "average": 0.119174441,
+          "median": 0.119174441
+        },
+        "durations": [
+          {
+            "duration": 0.119174441,
+            "location": "CreateEmployee.feature:9"
+          }
+        ]
+      },
+      {
+        "name": "I wait 20 ms for element having id \"bAdd\" to be enabled",
+        "aggregatedDurations": {
+          "average": 0.041874132,
+          "median": 0.041874132
+        },
+        "durations": [
+          {
+            "duration": 0.041874132,
+            "location": "CreateEmployee.feature:19"
+          }
+        ]
+      },
+      {
+        "name": "I wait 15 ms for element having id \"bAdd\" to be enabled",
+        "aggregatedDurations": {
+          "average": 0.05053855,
+          "median": 0.039550685
+        },
+        "durations": [
+          {
+            "duration": 0.042108609,
+            "location": "CreateEmployee.feature:35"
+          },
+          {
+            "duration": 0.060410725,
+            "location": "CreateEmployee.feature:53"
+          },
+          {
+            "duration": 0.055936389,
+            "location": "CreateEmployee.feature:71"
+          },
+          {
+            "duration": 0.035437128,
+            "location": "CreateEmployee.feature:89"
+          },
+          {
+            "duration": 0.086604665,
+            "location": "CreateEmployee.feature:108"
+          },
+          {
+            "duration": 0.037680337,
+            "location": "CreateEmployee.feature:128"
+          },
+          {
+            "duration": 0.031193493,
+            "location": "CreateEmployee.feature:148"
+          },
+          {
+            "duration": 0.104158415,
+            "location": "CreateEmployee.feature:148"
+          },
+          {
+            "duration": 0.037606332,
+            "location": "DeleteEmp.feature:31"
+          },
+          {
+            "duration": 0.039028302,
+            "location": "DeleteEmp.feature:59"
+          },
+          {
+            "duration": 0.040073069,
+            "location": "EditEmp.feature:52"
+          },
+          {
+            "duration": 0.03622514,
+            "location": "EditEmp.feature:78"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^element having (.+) \"([^\"]*)\" should\\s*((?:not)?)\\s+have attribute \"(.*?)\" with value \"(.*?)\"$",
+    "steps": [
+      {
+        "name": "element having model \"selectedEmployee.startDate\" should have attribute \"title\" with value \"Please enter a date formatting YYYY-MM-DD\"",
+        "aggregatedDurations": {
+          "average": 0.054895019,
+          "median": 0.054895019
+        },
+        "durations": [
+          {
+            "duration": 0.054895019,
+            "location": "CreateEmployee.feature:117"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on repeater element having text \"([^\"]*)\" should have \"([^\"]*)\" from  \"([^\"]*)\" to be clicked$",
+    "steps": [
+      {
+        "name": "I click on repeater element having text \"employee in employees\" should have \"emp_full_name\" from  \"Testdata8\" to be clicked",
+        "aggregatedDurations": {
+          "average": 1.06899088,
+          "median": 1.06899088
+        },
+        "durations": [
+          {
+            "duration": 1.047144033,
+            "location": "DeleteEmp.feature:41"
+          },
+          {
+            "duration": 1.090837728,
+            "location": "EditEmp.feature:61"
+          }
+        ]
+      },
+      {
+        "name": "I click on repeater element having text \"employee in employees\" should have \"emp_full_name\" from  \"Testdata9\" to be clicked",
+        "aggregatedDurations": {
+          "average": 0.96951938,
+          "median": 0.96951938
+        },
+        "durations": [
+          {
+            "duration": 0.907081045,
+            "location": "DeleteEmp.feature:69"
+          },
+          {
+            "duration": 1.031957716,
+            "location": "EditEmp.feature:87"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I accept alert$",
+    "steps": [
+      {
+        "name": "I accept alert",
+        "aggregatedDurations": {
+          "average": 10.126433063,
+          "median": 10.126433063
+        },
+        "durations": [
+          {
+            "duration": 10.126433063,
+            "location": "CreateEmployee.feature:116"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I scroll to bottom of page$",
+    "steps": [
+      {
+        "name": "I scroll to bottom of page",
+        "aggregatedDurations": {
+          "average": 0.007394172,
+          "median": 0.005946903
+        },
+        "durations": [
+          {
+            "duration": 0.006430585,
+            "location": "DeleteEmp.feature:39"
+          },
+          {
+            "duration": 0.008199175,
+            "location": "DeleteEmp.feature:67"
+          },
+          {
+            "duration": 0.014702634,
+            "location": "DeleteEmp.feature:75"
+          },
+          {
+            "duration": 0.005463222,
+            "location": "EditEmp.feature:60"
+          },
+          {
+            "duration": 0.00433501,
+            "location": "EditEmp.feature:86"
+          },
+          {
+            "duration": 0.005234408,
+            "location": "EditEmp.feature:93"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I assert message from alert should be \"([^\"]*)\" and dismiss alert$",
+    "steps": [
+      {
+        "name": "I assert message from alert should be \"Are you sure you want to delete\" and dismiss alert",
+        "aggregatedDurations": {
+          "average": 0.00841704,
+          "median": 0.00841704
+        },
+        "durations": [
+          {
+            "duration": 0.00841704,
+            "location": "DeleteEmp.feature:73"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on repeater element having repeater \"(.*?)\"$",
+    "steps": [
+      {
+        "name": "I click on repeater element having repeater \"employee in employees\"",
+        "aggregatedDurations": {
+          "average": 0.311858067,
+          "median": 0.302638122
+        },
+        "durations": [
+          {
+            "duration": 0.256708768,
+            "location": "CreateEmployee.feature:149"
+          },
+          {
+            "duration": 0.353855878,
+            "location": "CreateEmployee.feature:149"
+          },
+          {
+            "duration": 0.289555689,
+            "location": "DeleteEmp.feature:20"
+          },
+          {
+            "duration": 0.357080799,
+            "location": "EditEmp.feature:21"
+          },
+          {
+            "duration": 0.302638122,
+            "location": "EditEmp.feature:32"
+          },
+          {
+            "duration": 0.264412557,
+            "location": "EditEmp.feature:105"
+          },
+          {
+            "duration": 0.351388385,
+            "location": "EditEmp.feature:120"
+          },
+          {
+            "duration": 0.361752611,
+            "location": "EditEmp.feature:135"
+          },
+          {
+            "duration": 0.269329797,
+            "location": "EditEmp.feature:150"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I wait for (\\d+) sec$",
+    "steps": [
+      {
+        "name": "I wait for 5 sec",
+        "aggregatedDurations": {
+          "average": 5.004404673,
+          "median": 5.004404673
+        },
+        "durations": [
+          {
+            "duration": 5.009124627,
+            "location": "DeleteEmp.feature:46"
+          },
+          {
+            "duration": 4.99968472,
+            "location": "DeleteEmp.feature:74"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter \"([^\"]*)\" into \"([^\"]*)\"input field having (.+) \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I enter \"Testdata1\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.109730861,
+          "median": 0.093915392
+        },
+        "durations": [
+          {
+            "duration": 0.127208614,
+            "location": "CreateEmployee.feature:6"
+          },
+          {
+            "duration": 0.093915392,
+            "location": "CreateEmployee.feature:145"
+          },
+          {
+            "duration": 0.088072701,
+            "location": "CreateEmployee.feature:145"
+          },
+          {
+            "duration": 0.095337741,
+            "location": "DeleteEmp.feature:6"
+          },
+          {
+            "duration": 0.149599178,
+            "location": "DeleteEmp.feature:17"
+          },
+          {
+            "duration": 0.069056957,
+            "location": "EditEmp.feature:7"
+          },
+          {
+            "duration": 0.076762257,
+            "location": "EditEmp.feature:18"
+          },
+          {
+            "duration": 0.177400482,
+            "location": "EditEmp.feature:29"
+          },
+          {
+            "duration": 0.178664246,
+            "location": "Login.feature:23"
+          },
+          {
+            "duration": 0.079190104,
+            "location": "Logout.feature:6"
+          },
+          {
+            "duration": 0.071831801,
+            "location": "Logout.feature:16"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata1\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.075331292,
+          "median": 0.05306073
+        },
+        "durations": [
+          {
+            "duration": 0.058483174,
+            "location": "CreateEmployee.feature:7"
+          },
+          {
+            "duration": 0.043410888,
+            "location": "CreateEmployee.feature:146"
+          },
+          {
+            "duration": 0.050913048,
+            "location": "CreateEmployee.feature:146"
+          },
+          {
+            "duration": 0.062314868,
+            "location": "DeleteEmp.feature:7"
+          },
+          {
+            "duration": 0.05306073,
+            "location": "DeleteEmp.feature:18"
+          },
+          {
+            "duration": 0.051924966,
+            "location": "EditEmp.feature:8"
+          },
+          {
+            "duration": 0.058551138,
+            "location": "EditEmp.feature:19"
+          },
+          {
+            "duration": 0.048737802,
+            "location": "EditEmp.feature:30"
+          },
+          {
+            "duration": 0.301894287,
+            "location": "Login.feature:24"
+          },
+          {
+            "duration": 0.044914793,
+            "location": "Logout.feature:7"
+          },
+          {
+            "duration": 0.054438523,
+            "location": "Logout.feature:17"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"CreateEmp1\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.179445839,
+          "median": 0.179445839
+        },
+        "durations": [
+          {
+            "duration": 0.179445839,
+            "location": "CreateEmployee.feature:16"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"CreateEmp1\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.0655379,
+          "median": 0.0655379
+        },
+        "durations": [
+          {
+            "duration": 0.0655379,
+            "location": "CreateEmployee.feature:17"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"CreateEmp2\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.149860779,
+          "median": 0.157981104
+        },
+        "durations": [
+          {
+            "duration": 0.093385269,
+            "location": "CreateEmployee.feature:32"
+          },
+          {
+            "duration": 0.172124163,
+            "location": "CreateEmployee.feature:50"
+          },
+          {
+            "duration": 0.185322513,
+            "location": "CreateEmployee.feature:68"
+          },
+          {
+            "duration": 0.109952398,
+            "location": "CreateEmployee.feature:86"
+          },
+          {
+            "duration": 0.143838045,
+            "location": "CreateEmployee.feature:105"
+          },
+          {
+            "duration": 0.194542291,
+            "location": "CreateEmployee.feature:125"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"CreateEmp2\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.083428326,
+          "median": 0.06059272
+        },
+        "durations": [
+          {
+            "duration": 0.06029141,
+            "location": "CreateEmployee.feature:33"
+          },
+          {
+            "duration": 0.052729591,
+            "location": "CreateEmployee.feature:51"
+          },
+          {
+            "duration": 0.208283602,
+            "location": "CreateEmployee.feature:69"
+          },
+          {
+            "duration": 0.049213556,
+            "location": "CreateEmployee.feature:87"
+          },
+          {
+            "duration": 0.06089403,
+            "location": "CreateEmployee.feature:106"
+          },
+          {
+            "duration": 0.069157772,
+            "location": "CreateEmployee.feature:126"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"CreateEmp2\" into \"lastname\"input field having model \"selectedEmployee.lastName\"",
+        "aggregatedDurations": {
+          "average": 0.096914519,
+          "median": 0.057129922
+        },
+        "durations": [
+          {
+            "duration": 0.039287323,
+            "location": "CreateEmployee.feature:38"
+          },
+          {
+            "duration": 0.051291762,
+            "location": "CreateEmployee.feature:75"
+          },
+          {
+            "duration": 0.066578892,
+            "location": "CreateEmployee.feature:93"
+          },
+          {
+            "duration": 0.057129922,
+            "location": "CreateEmployee.feature:112"
+          },
+          {
+            "duration": 0.2702847,
+            "location": "CreateEmployee.feature:132"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"CreateEmp2\" into \"startdate\"input field having model \"selectedEmployee.startDate\"",
+        "aggregatedDurations": {
+          "average": 0.279425374,
+          "median": 0.189170065
+        },
+        "durations": [
+          {
+            "duration": 0.056436306,
+            "location": "CreateEmployee.feature:39"
+          },
+          {
+            "duration": 0.288451264,
+            "location": "CreateEmployee.feature:57"
+          },
+          {
+            "duration": 0.682925061,
+            "location": "CreateEmployee.feature:94"
+          },
+          {
+            "duration": 0.089888867,
+            "location": "CreateEmployee.feature:133"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"CreateEmp2\" into \"email\"input field having model \"selectedEmployee.email\"",
+        "aggregatedDurations": {
+          "average": 0.08085803,
+          "median": 0.079039449
+        },
+        "durations": [
+          {
+            "duration": 0.084785856,
+            "location": "CreateEmployee.feature:40"
+          },
+          {
+            "duration": 0.074451082,
+            "location": "CreateEmployee.feature:58"
+          },
+          {
+            "duration": 0.079039449,
+            "location": "CreateEmployee.feature:76"
+          },
+          {
+            "duration": 0.090061043,
+            "location": "CreateEmployee.feature:114"
+          },
+          {
+            "duration": 0.075952723,
+            "location": "CreateEmployee.feature:134"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"CreateEmp2\" into \"firstname\"input field having model \"selectedEmployee.firstName\"",
+        "aggregatedDurations": {
+          "average": 0.093044463,
+          "median": 0.071578822
+        },
+        "durations": [
+          {
+            "duration": 0.087371533,
+            "location": "CreateEmployee.feature:56"
+          },
+          {
+            "duration": 0.071578822,
+            "location": "CreateEmployee.feature:74"
+          },
+          {
+            "duration": 0.068567989,
+            "location": "CreateEmployee.feature:92"
+          },
+          {
+            "duration": 0.04578021,
+            "location": "CreateEmployee.feature:111"
+          },
+          {
+            "duration": 0.191923765,
+            "location": "CreateEmployee.feature:131"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"CreateEmp2\" into \"invalid_startdate\"input field having model \"selectedEmployee.startDate\"",
+        "aggregatedDurations": {
+          "average": 0.050010629,
+          "median": 0.050010629
+        },
+        "durations": [
+          {
+            "duration": 0.050010629,
+            "location": "CreateEmployee.feature:113"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata8\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.113915679,
+          "median": 0.113915679
+        },
+        "durations": [
+          {
+            "duration": 0.143982281,
+            "location": "DeleteEmp.feature:28"
+          },
+          {
+            "duration": 0.083849077,
+            "location": "EditEmp.feature:49"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata8\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.054685273,
+          "median": 0.054685273
+        },
+        "durations": [
+          {
+            "duration": 0.062167233,
+            "location": "DeleteEmp.feature:29"
+          },
+          {
+            "duration": 0.047203313,
+            "location": "EditEmp.feature:50"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata8\" into \"firstname\"input field having model \"selectedEmployee.firstName\"",
+        "aggregatedDurations": {
+          "average": 0.114743337,
+          "median": 0.114743337
+        },
+        "durations": [
+          {
+            "duration": 0.074169029,
+            "location": "DeleteEmp.feature:34"
+          },
+          {
+            "duration": 0.155317646,
+            "location": "EditEmp.feature:55"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata8\" into \"lastname\"input field having model \"selectedEmployee.lastName\"",
+        "aggregatedDurations": {
+          "average": 0.450567825,
+          "median": 0.450567825
+        },
+        "durations": [
+          {
+            "duration": 0.627224661,
+            "location": "DeleteEmp.feature:35"
+          },
+          {
+            "duration": 0.27391099,
+            "location": "EditEmp.feature:56"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata8\" into \"startdate\"input field having model \"selectedEmployee.startDate\"",
+        "aggregatedDurations": {
+          "average": 0.063012825,
+          "median": 0.063012825
+        },
+        "durations": [
+          {
+            "duration": 0.068711847,
+            "location": "DeleteEmp.feature:36"
+          },
+          {
+            "duration": 0.057313804,
+            "location": "EditEmp.feature:57"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata8\" into \"email\"input field having model \"selectedEmployee.email\"",
+        "aggregatedDurations": {
+          "average": 0.056476895,
+          "median": 0.056476895
+        },
+        "durations": [
+          {
+            "duration": 0.058921167,
+            "location": "DeleteEmp.feature:37"
+          },
+          {
+            "duration": 0.054032624,
+            "location": "EditEmp.feature:58"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata9\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.160286236,
+          "median": 0.160286236
+        },
+        "durations": [
+          {
+            "duration": 0.146030281,
+            "location": "DeleteEmp.feature:56"
+          },
+          {
+            "duration": 0.174542192,
+            "location": "EditEmp.feature:75"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata9\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.056457072,
+          "median": 0.056457072
+        },
+        "durations": [
+          {
+            "duration": 0.055278264,
+            "location": "DeleteEmp.feature:57"
+          },
+          {
+            "duration": 0.057635881,
+            "location": "EditEmp.feature:76"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata9\" into \"firstname\"input field having model \"selectedEmployee.firstName\"",
+        "aggregatedDurations": {
+          "average": 0.086988476,
+          "median": 0.086988476
+        },
+        "durations": [
+          {
+            "duration": 0.137705371,
+            "location": "DeleteEmp.feature:62"
+          },
+          {
+            "duration": 0.036271582,
+            "location": "EditEmp.feature:81"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata9\" into \"lastname\"input field having model \"selectedEmployee.lastName\"",
+        "aggregatedDurations": {
+          "average": 0.046094546,
+          "median": 0.046094546
+        },
+        "durations": [
+          {
+            "duration": 0.048321331,
+            "location": "DeleteEmp.feature:63"
+          },
+          {
+            "duration": 0.043867761,
+            "location": "EditEmp.feature:82"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata9\" into \"startdate\"input field having model \"selectedEmployee.startDate\"",
+        "aggregatedDurations": {
+          "average": 0.064636803,
+          "median": 0.064636803
+        },
+        "durations": [
+          {
+            "duration": 0.064498042,
+            "location": "DeleteEmp.feature:64"
+          },
+          {
+            "duration": 0.064775564,
+            "location": "EditEmp.feature:83"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata9\" into \"email\"input field having model \"selectedEmployee.email\"",
+        "aggregatedDurations": {
+          "average": 0.057984766,
+          "median": 0.057984766
+        },
+        "durations": [
+          {
+            "duration": 0.056054949,
+            "location": "DeleteEmp.feature:65"
+          },
+          {
+            "duration": 0.059914584,
+            "location": "EditEmp.feature:84"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata8\" into \"firstname_newname\"input field having model \"selectedEmployee.firstName\"",
+        "aggregatedDurations": {
+          "average": 0.076043341,
+          "median": 0.076043341
+        },
+        "durations": [
+          {
+            "duration": 0.076043341,
+            "location": "EditEmp.feature:64"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata9\" into \"lastname_newname\"input field having model \"selectedEmployee.lastName\"",
+        "aggregatedDurations": {
+          "average": 0.045093767,
+          "median": 0.045093767
+        },
+        "durations": [
+          {
+            "duration": 0.045093767,
+            "location": "EditEmp.feature:91"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata10\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.093945221,
+          "median": 0.093945221
+        },
+        "durations": [
+          {
+            "duration": 0.093945221,
+            "location": "EditEmp.feature:102"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata10\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.056899597,
+          "median": 0.056899597
+        },
+        "durations": [
+          {
+            "duration": 0.056899597,
+            "location": "EditEmp.feature:103"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata10\" into \"startdate\"input field having model \"selectedEmployee.startDate\"",
+        "aggregatedDurations": {
+          "average": 0.050316848,
+          "median": 0.050316848
+        },
+        "durations": [
+          {
+            "duration": 0.050316848,
+            "location": "EditEmp.feature:108"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata11\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.06707239,
+          "median": 0.06707239
+        },
+        "durations": [
+          {
+            "duration": 0.06707239,
+            "location": "EditEmp.feature:117"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata11\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.057104625,
+          "median": 0.057104625
+        },
+        "durations": [
+          {
+            "duration": 0.057104625,
+            "location": "EditEmp.feature:118"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata11\" into \"startdate\"input field having model \"selectedEmployee.startDate\"",
+        "aggregatedDurations": {
+          "average": 0.104964174,
+          "median": 0.104964174
+        },
+        "durations": [
+          {
+            "duration": 0.104964174,
+            "location": "EditEmp.feature:123"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata12\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.142926186,
+          "median": 0.142926186
+        },
+        "durations": [
+          {
+            "duration": 0.142926186,
+            "location": "EditEmp.feature:132"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata12\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.049731974,
+          "median": 0.049731974
+        },
+        "durations": [
+          {
+            "duration": 0.049731974,
+            "location": "EditEmp.feature:133"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata12\" into \"email\"input field having model \"selectedEmployee.email\"",
+        "aggregatedDurations": {
+          "average": 0.106130522,
+          "median": 0.106130522
+        },
+        "durations": [
+          {
+            "duration": 0.106130522,
+            "location": "EditEmp.feature:138"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata13\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.109539324,
+          "median": 0.109539324
+        },
+        "durations": [
+          {
+            "duration": 0.109539324,
+            "location": "EditEmp.feature:147"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata13\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.049340045,
+          "median": 0.049340045
+        },
+        "durations": [
+          {
+            "duration": 0.049340045,
+            "location": "EditEmp.feature:148"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata13\" into \"email\"input field having model \"selectedEmployee.email\"",
+        "aggregatedDurations": {
+          "average": 0.048342476,
+          "median": 0.048342476
+        },
+        "durations": [
+          {
+            "duration": 0.048342476,
+            "location": "EditEmp.feature:153"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata2\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.081950599,
+          "median": 0.081950599
+        },
+        "durations": [
+          {
+            "duration": 0.081950599,
+            "location": "Login.feature:34"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata2\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.049660233,
+          "median": 0.049660233
+        },
+        "durations": [
+          {
+            "duration": 0.049660233,
+            "location": "Login.feature:35"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata3\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.113536021,
+          "median": 0.113536021
+        },
+        "durations": [
+          {
+            "duration": 0.113536021,
+            "location": "Login.feature:34"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata3\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.065146726,
+          "median": 0.065146726
+        },
+        "durations": [
+          {
+            "duration": 0.065146726,
+            "location": "Login.feature:35"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata4\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.169015914,
+          "median": 0.169015914
+        },
+        "durations": [
+          {
+            "duration": 0.169015914,
+            "location": "Login.feature:34"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata4\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.0620381,
+          "median": 0.0620381
+        },
+        "durations": [
+          {
+            "duration": 0.0620381,
+            "location": "Login.feature:35"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata6\" into \"password\"input field having model \"user.password\"",
+        "aggregatedDurations": {
+          "average": 0.137066881,
+          "median": 0.137066881
+        },
+        "durations": [
+          {
+            "duration": 0.137066881,
+            "location": "Login.feature:50"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"Testdata7\" into \"username\"input field having model \"user.name\"",
+        "aggregatedDurations": {
+          "average": 0.168392527,
+          "median": 0.168392527
+        },
+        "durations": [
+          {
+            "duration": 0.168392527,
+            "location": "Login.feature:59"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^element having (.+) \"([^\"]*)\" should\\s*((?:not)?)\\s+be (enabled|disabled)$",
+    "steps": [
+      {
+        "name": "element having id \"bEdit\" should be enabled",
+        "aggregatedDurations": {
+          "average": 0.040370415,
+          "median": 0.040370415
+        },
+        "durations": [
+          {
+            "duration": 0.032673611,
+            "location": "CreateEmployee.feature:150"
+          },
+          {
+            "duration": 0.048067219,
+            "location": "EditEmp.feature:22"
+          }
+        ]
+      },
+      {
+        "name": "element having id \"bDelete\" should be enabled",
+        "aggregatedDurations": {
+          "average": 0.04028206,
+          "median": 0.04028206
+        },
+        "durations": [
+          {
+            "duration": 0.035724466,
+            "location": "CreateEmployee.feature:150"
+          },
+          {
+            "duration": 0.044839655,
+            "location": "DeleteEmp.feature:21"
+          }
+        ]
+      },
+      {
+        "name": "element having buttonText \"Update\" should be enabled",
+        "aggregatedDurations": {
+          "average": 0.021573856,
+          "median": 0.021573856
+        },
+        "durations": [
+          {
+            "duration": 0.021573856,
+            "location": "EditEmp.feature:39"
+          }
+        ]
+      },
+      {
+        "name": "element having xpath \"//p[contains(text(),\u0027Delete\u0027)]\" should be enabled",
+        "aggregatedDurations": {
+          "average": 0.029233468,
+          "median": 0.029233468
+        },
+        "durations": [
+          {
+            "duration": 0.029233468,
+            "location": "EditEmp.feature:41"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on element having (.+) \"(.*?)\"$",
+    "steps": [
+      {
+        "name": "I click on element having buttonText \"Login\"",
+        "aggregatedDurations": {
+          "average": 1.208338434,
+          "median": 1.349727783
+        },
+        "durations": [
+          {
+            "duration": 1.415836586,
+            "location": "CreateEmployee.feature:8"
+          },
+          {
+            "duration": 1.405308112,
+            "location": "CreateEmployee.feature:18"
+          },
+          {
+            "duration": 1.358070439,
+            "location": "CreateEmployee.feature:34"
+          },
+          {
+            "duration": 1.159035311,
+            "location": "CreateEmployee.feature:52"
+          },
+          {
+            "duration": 1.422588871,
+            "location": "CreateEmployee.feature:70"
+          },
+          {
+            "duration": 1.112774063,
+            "location": "CreateEmployee.feature:88"
+          },
+          {
+            "duration": 1.429379669,
+            "location": "CreateEmployee.feature:107"
+          },
+          {
+            "duration": 1.843308337,
+            "location": "CreateEmployee.feature:127"
+          },
+          {
+            "duration": 1.535759393,
+            "location": "CreateEmployee.feature:147"
+          },
+          {
+            "duration": 1.337810565,
+            "location": "CreateEmployee.feature:147"
+          },
+          {
+            "duration": 1.423493177,
+            "location": "DeleteEmp.feature:8"
+          },
+          {
+            "duration": 1.360164882,
+            "location": "DeleteEmp.feature:19"
+          },
+          {
+            "duration": 1.474988078,
+            "location": "DeleteEmp.feature:30"
+          },
+          {
+            "duration": 1.418933507,
+            "location": "DeleteEmp.feature:58"
+          },
+          {
+            "duration": 1.320146184,
+            "location": "EditEmp.feature:9"
+          },
+          {
+            "duration": 1.333557868,
+            "location": "EditEmp.feature:20"
+          },
+          {
+            "duration": 1.418779076,
+            "location": "EditEmp.feature:31"
+          },
+          {
+            "duration": 1.588744985,
+            "location": "EditEmp.feature:51"
+          },
+          {
+            "duration": 1.341385127,
+            "location": "EditEmp.feature:77"
+          },
+          {
+            "duration": 1.917827005,
+            "location": "EditEmp.feature:104"
+          },
+          {
+            "duration": 1.296206781,
+            "location": "EditEmp.feature:119"
+          },
+          {
+            "duration": 1.402235356,
+            "location": "EditEmp.feature:134"
+          },
+          {
+            "duration": 1.47518442,
+            "location": "EditEmp.feature:149"
+          },
+          {
+            "duration": 1.087152913,
+            "location": "Login.feature:25"
+          },
+          {
+            "duration": 0.244735669,
+            "location": "Login.feature:36"
+          },
+          {
+            "duration": 0.299936528,
+            "location": "Login.feature:36"
+          },
+          {
+            "duration": 0.779287179,
+            "location": "Login.feature:36"
+          },
+          {
+            "duration": 0.281556254,
+            "location": "Login.feature:51"
+          },
+          {
+            "duration": 0.248701404,
+            "location": "Login.feature:60"
+          },
+          {
+            "duration": 0.316562183,
+            "location": "Login.feature:69"
+          },
+          {
+            "duration": 1.314887612,
+            "location": "Logout.feature:8"
+          },
+          {
+            "duration": 1.302492375,
+            "location": "Logout.feature:18"
+          }
+        ]
+      },
+      {
+        "name": "I click on element having id \"bAdd\"",
+        "aggregatedDurations": {
+          "average": 0.450413652,
+          "median": 0.450056014
+        },
+        "durations": [
+          {
+            "duration": 0.450056014,
+            "location": "CreateEmployee.feature:20"
+          },
+          {
+            "duration": 0.454212428,
+            "location": "CreateEmployee.feature:36"
+          },
+          {
+            "duration": 0.407585304,
+            "location": "CreateEmployee.feature:54"
+          },
+          {
+            "duration": 0.491749285,
+            "location": "CreateEmployee.feature:72"
+          },
+          {
+            "duration": 0.281163947,
+            "location": "CreateEmployee.feature:90"
+          },
+          {
+            "duration": 0.537128881,
+            "location": "CreateEmployee.feature:109"
+          },
+          {
+            "duration": 0.513964651,
+            "location": "CreateEmployee.feature:129"
+          },
+          {
+            "duration": 0.414756703,
+            "location": "DeleteEmp.feature:32"
+          },
+          {
+            "duration": 0.529424336,
+            "location": "DeleteEmp.feature:60"
+          },
+          {
+            "duration": 0.434467197,
+            "location": "EditEmp.feature:53"
+          },
+          {
+            "duration": 0.440041428,
+            "location": "EditEmp.feature:79"
+          }
+        ]
+      },
+      {
+        "name": "I click on element having buttonText \"Add\"",
+        "aggregatedDurations": {
+          "average": 0.723337198,
+          "median": 0.629260767
+        },
+        "durations": [
+          {
+            "duration": 0.284679228,
+            "location": "CreateEmployee.feature:41"
+          },
+          {
+            "duration": 0.272179024,
+            "location": "CreateEmployee.feature:59"
+          },
+          {
+            "duration": 0.309755905,
+            "location": "CreateEmployee.feature:77"
+          },
+          {
+            "duration": 0.269219921,
+            "location": "CreateEmployee.feature:95"
+          },
+          {
+            "duration": 0.315734148,
+            "location": "CreateEmployee.feature:115"
+          },
+          {
+            "duration": 1.303196565,
+            "location": "CreateEmployee.feature:135"
+          },
+          {
+            "duration": 1.26806188,
+            "location": "DeleteEmp.feature:38"
+          },
+          {
+            "duration": 1.297828493,
+            "location": "DeleteEmp.feature:66"
+          },
+          {
+            "duration": 0.969929434,
+            "location": "EditEmp.feature:59"
+          },
+          {
+            "duration": 0.942787387,
+            "location": "EditEmp.feature:85"
+          }
+        ]
+      },
+      {
+        "name": "I click on element having id \"bDelete\"",
+        "aggregatedDurations": {
+          "average": 0.078527259,
+          "median": 0.078527259
+        },
+        "durations": [
+          {
+            "duration": 0.079737973,
+            "location": "DeleteEmp.feature:43"
+          },
+          {
+            "duration": 0.077316546,
+            "location": "DeleteEmp.feature:71"
+          }
+        ]
+      },
+      {
+        "name": "I click on element having id \"bEdit\"",
+        "aggregatedDurations": {
+          "average": 0.445406371,
+          "median": 0.427761733
+        },
+        "durations": [
+          {
+            "duration": 0.681459291,
+            "location": "EditEmp.feature:33"
+          },
+          {
+            "duration": 0.353839642,
+            "location": "EditEmp.feature:62"
+          },
+          {
+            "duration": 0.283159841,
+            "location": "EditEmp.feature:88"
+          },
+          {
+            "duration": 0.536204184,
+            "location": "EditEmp.feature:106"
+          },
+          {
+            "duration": 0.427761733,
+            "location": "EditEmp.feature:121"
+          },
+          {
+            "duration": 0.449234775,
+            "location": "EditEmp.feature:136"
+          },
+          {
+            "duration": 0.386185135,
+            "location": "EditEmp.feature:151"
+          }
+        ]
+      },
+      {
+        "name": "I click on element having buttonText \"Update\"",
+        "aggregatedDurations": {
+          "average": 0.950712514,
+          "median": 1.071048698
+        },
+        "durations": [
+          {
+            "duration": 1.356506498,
+            "location": "EditEmp.feature:65"
+          },
+          {
+            "duration": 1.071048698,
+            "location": "EditEmp.feature:92"
+          },
+          {
+            "duration": 1.078400958,
+            "location": "EditEmp.feature:110"
+          },
+          {
+            "duration": 0.997960306,
+            "location": "EditEmp.feature:140"
+          },
+          {
+            "duration": 0.249646112,
+            "location": "EditEmp.feature:155"
+          }
+        ]
+      },
+      {
+        "name": "I click on element having xpath \"//p[contains(text(),\u0027Logout\u0027)]\"",
+        "aggregatedDurations": {
+          "average": 0.459251627,
+          "median": 0.459251627
+        },
+        "durations": [
+          {
+            "duration": 0.459251627,
+            "location": "Logout.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I assert repeater element having \"([^\"]*)\" should have \"([^\"]*)\" from \"([^\"]*)\" have text present$",
+    "steps": [
+      {
+        "name": "I assert repeater element having \"employee in employees\" should have \"emp_full_name\" from \"CreateEmp2\" have text present",
+        "aggregatedDurations": {
+          "average": 1.002516201,
+          "median": 1.002516201
+        },
+        "durations": [
+          {
+            "duration": 1.002516201,
+            "location": "CreateEmployee.feature:136"
+          }
+        ]
+      },
+      {
+        "name": "I assert repeater element having \"employee in employees\" should have \"emp_full_name\" from \"Testdata8\" have text present",
+        "aggregatedDurations": {
+          "average": 1.188613133,
+          "median": 1.188613133
+        },
+        "durations": [
+          {
+            "duration": 1.188613133,
+            "location": "DeleteEmp.feature:40"
+          }
+        ]
+      },
+      {
+        "name": "I assert repeater element having \"employee in employees\" should have \"emp_full_name\" from \"Testdata9\" have text present",
+        "aggregatedDurations": {
+          "average": 1.027413905,
+          "median": 1.027413905
+        },
+        "durations": [
+          {
+            "duration": 1.027413905,
+            "location": "DeleteEmp.feature:68"
+          }
+        ]
+      },
+      {
+        "name": "I assert repeater element having \"employee in employees\" should have \"new_emp_name\" from \"Testdata8\" have text present",
+        "aggregatedDurations": {
+          "average": 0.845789044,
+          "median": 0.845789044
+        },
+        "durations": [
+          {
+            "duration": 0.845789044,
+            "location": "EditEmp.feature:66"
+          }
+        ]
+      },
+      {
+        "name": "I assert repeater element having \"employee in employees\" should have \"new_emp_name\" from \"Testdata9\" have text present",
+        "aggregatedDurations": {
+          "average": 0.93636964,
+          "median": 0.93636964
+        },
+        "durations": [
+          {
+            "duration": 0.93636964,
+            "location": "EditEmp.feature:94"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I assert message from alert should be \"([^\"]*)\" and accept alert$",
+    "steps": [
+      {
+        "name": "I assert message from alert should be \"Are you sure you want to delete\" and accept alert",
+        "aggregatedDurations": {
+          "average": 0.009203919,
+          "median": 0.009203919
+        },
+        "durations": [
+          {
+            "duration": 0.009203919,
+            "location": "DeleteEmp.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I clear input field having (.+) \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I clear input field having model \"selectedEmployee.firstName\"",
+        "aggregatedDurations": {
+          "average": 0.137765784,
+          "median": 0.137765784
+        },
+        "durations": [
+          {
+            "duration": 0.137765784,
+            "location": "EditEmp.feature:63"
+          }
+        ]
+      },
+      {
+        "name": "I clear input field having model \"selectedEmployee.lastName\"",
+        "aggregatedDurations": {
+          "average": 0.019591933,
+          "median": 0.019591933
+        },
+        "durations": [
+          {
+            "duration": 0.019591933,
+            "location": "EditEmp.feature:90"
+          }
+        ]
+      },
+      {
+        "name": "I clear input field having model \"selectedEmployee.startDate\"",
+        "aggregatedDurations": {
+          "average": 0.132528544,
+          "median": 0.132528544
+        },
+        "durations": [
+          {
+            "duration": 0.137392356,
+            "location": "EditEmp.feature:107"
+          },
+          {
+            "duration": 0.127664732,
+            "location": "EditEmp.feature:122"
+          }
+        ]
+      },
+      {
+        "name": "I clear input field having model \"selectedEmployee.email\"",
+        "aggregatedDurations": {
+          "average": 0.108163607,
+          "median": 0.108163607
+        },
+        "durations": [
+          {
+            "duration": 0.120684388,
+            "location": "EditEmp.feature:137"
+          },
+          {
+            "duration": 0.095642826,
+            "location": "EditEmp.feature:152"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^element having (.+)\"([^\"]*)\" from \"([^\"]*)\"  should\\s*((?:not)?)\\s+be present$",
+    "steps": [
+      {
+        "name": "element having model\"firstname\" from \"CreateEmp1\"  should be present",
+        "aggregatedDurations": {
+          "average": 0.056276211,
+          "median": 0.056276211
+        },
+        "durations": [
+          {
+            "duration": 0.056276211,
+            "location": "CreateEmployee.feature:21"
+          }
+        ]
+      },
+      {
+        "name": "element having model\"lastname\" from \"CreateEmp1\"  should be present",
+        "aggregatedDurations": {
+          "average": 0.048846546,
+          "median": 0.048846546
+        },
+        "durations": [
+          {
+            "duration": 0.048846546,
+            "location": "CreateEmployee.feature:22"
+          }
+        ]
+      },
+      {
+        "name": "element having model\"startdate\" from \"CreateEmp1\"  should be present",
+        "aggregatedDurations": {
+          "average": 0.038944102,
+          "median": 0.038944102
+        },
+        "durations": [
+          {
+            "duration": 0.038944102,
+            "location": "CreateEmployee.feature:23"
+          }
+        ]
+      },
+      {
+        "name": "element having model\"email\" from \"CreateEmp1\"  should be present",
+        "aggregatedDurations": {
+          "average": 0.045649944,
+          "median": 0.045649944
+        },
+        "durations": [
+          {
+            "duration": 0.045649944,
+            "location": "CreateEmployee.feature:24"
+          }
+        ]
+      },
+      {
+        "name": "element having xpath\"repeater_path\" from \"Testdata8\"  should not be present",
+        "aggregatedDurations": {
+          "average": 30.424994441,
+          "median": 30.424994441
+        },
+        "durations": [
+          {
+            "duration": 30.424994441,
+            "location": "DeleteEmp.feature:47"
+          }
+        ]
+      },
+      {
+        "name": "element having xpath\"repeater_path\" from \"Testdata9\"  should be present",
+        "aggregatedDurations": {
+          "average": 0.049816552,
+          "median": 0.049816552
+        },
+        "durations": [
+          {
+            "duration": 0.049816552,
+            "location": "DeleteEmp.feature:76"
+          }
+        ]
+      },
+      {
+        "name": "element having buttonText\"update\" from \"Testdata1\"  should be present",
+        "aggregatedDurations": {
+          "average": 0.050819408,
+          "median": 0.050819408
+        },
+        "durations": [
+          {
+            "duration": 0.050819408,
+            "location": "EditEmp.feature:38"
+          }
+        ]
+      },
+      {
+        "name": "element having xpath\"deletebutton\" from \"Testdata1\"  should be present",
+        "aggregatedDurations": {
+          "average": 0.044600268,
+          "median": 0.044600268
+        },
+        "durations": [
+          {
+            "duration": 0.044600268,
+            "location": "EditEmp.feature:40"
+          }
+        ]
+      },
+      {
+        "name": "element having xpath\"username\" from \"Login1\"  should be present",
+        "aggregatedDurations": {
+          "average": 0.133629004,
+          "median": 0.133629004
+        },
+        "durations": [
+          {
+            "duration": 0.133629004,
+            "location": "Login.feature:6"
+          }
+        ]
+      },
+      {
+        "name": "element having xpath\"password\" from \"Login1\"  should be present",
+        "aggregatedDurations": {
+          "average": 0.065513735,
+          "median": 0.065513735
+        },
+        "durations": [
+          {
+            "duration": 0.065513735,
+            "location": "Login.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I wait (\\d+) ms for element having (.+) \"(.*?)\" to display$",
+    "steps": [
+      {
+        "name": "I wait 5 ms for element having buttonText \"Add\" to display",
+        "aggregatedDurations": {
+          "average": 0.084277972,
+          "median": 0.083055213
+        },
+        "durations": [
+          {
+            "duration": 0.052978417,
+            "location": "CreateEmployee.feature:37"
+          },
+          {
+            "duration": 0.07964169,
+            "location": "CreateEmployee.feature:55"
+          },
+          {
+            "duration": 0.114335361,
+            "location": "CreateEmployee.feature:73"
+          },
+          {
+            "duration": 0.058505828,
+            "location": "CreateEmployee.feature:91"
+          },
+          {
+            "duration": 0.038430592,
+            "location": "CreateEmployee.feature:110"
+          },
+          {
+            "duration": 0.113546971,
+            "location": "CreateEmployee.feature:130"
+          },
+          {
+            "duration": 0.086468736,
+            "location": "DeleteEmp.feature:33"
+          },
+          {
+            "duration": 0.127410242,
+            "location": "DeleteEmp.feature:61"
+          },
+          {
+            "duration": 0.127778006,
+            "location": "EditEmp.feature:54"
+          },
+          {
+            "duration": 0.043683879,
+            "location": "EditEmp.feature:80"
+          }
+        ]
+      },
+      {
+        "name": "I wait 10 ms for element having css \".ng-pristine.ng-invalid.ng-invalid-required\" to display",
+        "aggregatedDurations": {
+          "average": 0.085741892,
+          "median": 0.087440819
+        },
+        "durations": [
+          {
+            "duration": 0.084076005,
+            "location": "CreateEmployee.feature:42"
+          },
+          {
+            "duration": 0.090805634,
+            "location": "CreateEmployee.feature:60"
+          },
+          {
+            "duration": 0.075442232,
+            "location": "CreateEmployee.feature:78"
+          },
+          {
+            "duration": 0.092643699,
+            "location": "CreateEmployee.feature:96"
+          }
+        ]
+      },
+      {
+        "name": "I wait 5 ms for element having repeater \"employee in employees\" to display",
+        "aggregatedDurations": {
+          "average": 0.080777832,
+          "median": 0.080777832
+        },
+        "durations": [
+          {
+            "duration": 0.080777832,
+            "location": "Login.feature:26"
+          }
+        ]
+      },
+      {
+        "name": "I wait 5 ms for element having css \".error-message.ng-binding\" to display",
+        "aggregatedDurations": {
+          "average": 0.052744065,
+          "median": 0.053793237
+        },
+        "durations": [
+          {
+            "duration": 0.028756206,
+            "location": "Login.feature:37"
+          },
+          {
+            "duration": 0.053793237,
+            "location": "Login.feature:37"
+          },
+          {
+            "duration": 0.075682752,
+            "location": "Login.feature:37"
+          }
+        ]
+      },
+      {
+        "name": "I wait 5 ms for element having css \".ng-pristine.ng-invalid.ng-invalid-required\" to display",
+        "aggregatedDurations": {
+          "average": 0.051315549,
+          "median": 0.037529305
+        },
+        "durations": [
+          {
+            "duration": 0.080444428,
+            "location": "Login.feature:52"
+          },
+          {
+            "duration": 0.035972915,
+            "location": "Login.feature:61"
+          },
+          {
+            "duration": 0.037529305,
+            "location": "Login.feature:70"
+          }
+        ]
+      },
+      {
+        "name": "I wait 5 ms for element having xpath \"//p[contains(text(),\u0027Logout\u0027)]\" to display",
+        "aggregatedDurations": {
+          "average": 0.082819036,
+          "median": 0.082819036
+        },
+        "durations": [
+          {
+            "duration": 0.082819036,
+            "location": "Logout.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I assert element having (.+) \"([^\"]*)\" should\\s*((?:not)?)\\s+have text as \"(.*?)\"$",
+    "steps": [
+      {
+        "name": "I assert element having css \".error-message.ng-binding\" should have text as \"Invalid username or password!\"",
+        "aggregatedDurations": {
+          "average": 0.01695113,
+          "median": 0.012778102
+        },
+        "durations": [
+          {
+            "duration": 0.010656097,
+            "location": "Login.feature:38"
+          },
+          {
+            "duration": 0.012778102,
+            "location": "Login.feature:38"
+          },
+          {
+            "duration": 0.027419191,
+            "location": "Login.feature:38"
+          }
+        ]
+      }
+    ]
+  }
+]

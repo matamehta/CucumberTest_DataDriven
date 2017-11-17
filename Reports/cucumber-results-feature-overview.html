@@ -1,0 +1,849 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Results Overview Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Results Overview Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+  <h1>Overview Chart</h1>
+	<table class="chart">
+	<tr>
+	<th class="chart">Features Status</th><th class="chart">Scenario Status</th>
+	</tr>
+	<tr class="chart">
+    <td class="chart">
+<div id="feature_status" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <svg aria-label="A chart." style="overflow: hidden;" height="300"
+                    width="450">
+                    <defs id="defs"></defs>
+
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151.90211303,120.61803399 L153.80422607,61.23606798 A90,60,0,0,1,215.4134656,77.49795033 M215.4134656,77.49795033 L151.90211303,120.61803399"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151.90211303,120.61803399 L215.4134656,77.49795033 A90,60,0,0,1,243.62663162,117.46863681 M243.62663162,117.46863681 L151.90211303,120.61803399"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151.90211303,120.61803399 L243.62663162,117.46863681 A90,60,0,0,1,223.15041791,159.48150736 M223.15041791,159.48150736 L151.90211303,120.61803399"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151.90211303,120.61803399 L223.15041791,159.48150736 A90,60,0,0,1,165.08421709,180.76295006 M165.08421709,180.76295006 L151.90211303,120.61803399"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151.90211303,120.61803399 L165.08421709,180.76295006 A90,60,0,0,1,100.90355336,169.77708764 M100.90355336,169.77708764 L151.90211303,120.61803399"></path>
+
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M148.09788697,119.38196601 L93.29510123,167.30495168 A90,60,0,0,1,64.76133921,144.31068952 M64.76133921,144.31068952 L148.09788697,119.38196601"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M148.09788697,119.38196601 L64.76133921,144.31068952 A90,60,0,0,1,56.37336838,114.99650085 M56.37336838,114.99650085 L148.09788697,119.38196601"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M148.09788697,119.38196601 L56.37336838,114.99650085 A90,60,0,0,1,70.20626064,86.61432432 M70.20626064,86.61432432 L148.09788697,119.38196601"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M148.09788697,119.38196601 L70.20626064,86.61432432 A90,60,0,0,1,102.83794327,66.18553122 M102.83794327,66.18553122 L148.09788697,119.38196601"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M148.09788697,119.38196601 L102.83794327,66.18553122 A90,60,0,0,1,146.19577393,58.76393202 M146.19577393,58.76393202 L148.09788697,119.38196601"></path>
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M151.90211303,120.61803399 L153.80422607,61.23606798 L153.80422607,41.23606798 L151.90211303,100.61803399 L151.90211303,120.61803399 "></path>
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M148.09788697,119.38196601 L93.29510123,167.30495168 L93.29510123,147.30495168 L148.09788697,99.38196601 L148.09788697,119.38196601 "></path>
+
+
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M151.90211303,120.61803399 L100.90355336,169.77708764 L100.90355336,149.77708764 L151.90211303,100.61803399 L151.90211303,120.61803399 "></path>
+
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M148.09788697,119.38196601 L146.19577393,58.76393202 L146.19577393,38.76393202 L148.09788697,99.38196601 L148.09788697,119.38196601 "></path>
+
+            
+            <path fill="darkgray" stroke-width="1" stroke="darkgray"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+            
+            <path fill="goldenrod" stroke-width="1" stroke="goldenrod"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151.90211303,100.61803399 L153.80422607,41.23606798 A90,60,0,0,1,215.4134656,57.49795033 M215.4134656,57.49795033 L151.90211303,100.61803399"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151.90211303,100.61803399 L215.4134656,57.49795033 A90,60,0,0,1,243.62663162,97.46863681 M243.62663162,97.46863681 L151.90211303,100.61803399"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151.90211303,100.61803399 L243.62663162,97.46863681 A90,60,0,0,1,223.15041791,139.48150736 M223.15041791,139.48150736 L151.90211303,100.61803399"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151.90211303,100.61803399 L223.15041791,139.48150736 A90,60,0,0,1,165.08421709,160.76295006 M165.08421709,160.76295006 L151.90211303,100.61803399"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151.90211303,100.61803399 L165.08421709,160.76295006 A90,60,0,0,1,100.90355336,149.77708764 M100.90355336,149.77708764 L151.90211303,100.61803399"></path>
+
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M148.09788697,99.38196601 L93.29510123,147.30495168 A90,60,0,0,1,64.76133921,124.31068952 M64.76133921,124.31068952 L148.09788697,99.38196601"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M148.09788697,99.38196601 L64.76133921,124.31068952 A90,60,0,0,1,56.37336838,94.99650085 M56.37336838,94.99650085 L148.09788697,99.38196601"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M148.09788697,99.38196601 L56.37336838,94.99650085 A90,60,0,0,1,70.20626064,66.61432432 M70.20626064,66.61432432 L148.09788697,99.38196601"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M148.09788697,99.38196601 L70.20626064,66.61432432 A90,60,0,0,1,102.83794327,46.18553122 M102.83794327,46.18553122 L148.09788697,99.38196601"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M148.09788697,99.38196601 L102.83794327,46.18553122 A90,60,0,0,1,146.19577393,38.76393202 M146.19577393,38.76393202 L148.09788697,99.38196601"></path>
+			            <text x="280"
+			            	 y="67.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">60% (3) Passed</text>
+			           <circle cx="270"
+			            cy="62.5"
+			             r="5" stroke="darkgreen" stroke-width="1" fill="green" />
+			            <text x="280"
+			            	 y="97.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">40% (2) Failed</text>
+			           <circle cx="270"
+			            cy="92.5"
+			             r="5" stroke="darkred" stroke-width="1" fill="red" />
+			            <text x="280"
+			            	 y="127.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Undefined</text>
+			           <circle cx="270"
+			            cy="122.5"
+			             r="5" stroke="darkgray" stroke-width="1" fill="silver" />
+			            <text x="280"
+			            	 y="157.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Known</text>
+			           <circle cx="270"
+			            cy="152.5"
+			             r="5" stroke="goldenrod" stroke-width="1" fill="gold" />
+                    </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+    <td class="chart">
+<div id="scenario_status" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <svg aria-label="A chart." style="overflow: hidden;" height="300"
+                    width="450">
+                    <defs id="defs"></defs>
+
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M150.36749904,121.9659462 L150.73499807,63.9318924 A90,60,0,0,1,234.04238745,101.2272294 M234.04238745,101.2272294 L150.36749904,121.9659462"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M150.36749904,121.9659462 L234.04238745,101.2272294 A90,60,0,0,1,213.78387145,166.74850166 M213.78387145,166.74850166 L150.36749904,121.9659462"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M150.36749904,121.9659462 L213.78387145,166.74850166 A90,60,0,0,1,115.14438945,179.04111154 M115.14438945,179.04111154 L150.36749904,121.9659462"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M150.36749904,121.9659462 L115.14438945,179.04111154 A90,60,0,0,1,60.75036553,122.8231581 M60.75036553,122.8231581 L150.36749904,121.9659462"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M150.36749904,121.9659462 L60.75036553,122.8231581 A90,60,0,0,1,118.22324811,67.98355863 M118.22324811,67.98355863 L150.36749904,121.9659462"></path>
+
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M149.63250096,118.0340538 L116.75325197,60.11977384 A90,60,0,0,1,123.03992471,58.67184243 M123.03992471,58.67184243 L149.63250096,118.0340538"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M149.63250096,118.0340538 L123.03992471,58.67184243 A90,60,0,0,1,129.46982972,57.53738952 M129.46982972,57.53738952 L149.63250096,118.0340538"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M149.63250096,118.0340538 L129.46982972,57.53738952 A90,60,0,0,1,136.0078491,56.7226111 M136.0078491,56.7226111 L149.63250096,118.0340538"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M149.63250096,118.0340538 L136.0078491,56.7226111 A90,60,0,0,1,142.61827446,56.2319572 M142.61827446,56.2319572 L149.63250096,118.0340538"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M149.63250096,118.0340538 L142.61827446,56.2319572 A90,60,0,0,1,149.26500193,56.0681076 M149.26500193,56.0681076 L149.63250096,118.0340538"></path>
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M150.36749904,121.9659462 L150.73499807,63.9318924 L150.73499807,43.9318924 L150.36749904,101.9659462 L150.36749904,121.9659462 "></path>
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M149.63250096,118.0340538 L116.75325197,60.11977384 L116.75325197,40.11977384 L149.63250096,98.0340538 L149.63250096,118.0340538 "></path>
+
+
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M150.36749904,121.9659462 L118.22324811,67.98355863 L118.22324811,47.98355863 L150.36749904,101.9659462 L150.36749904,121.9659462 "></path>
+
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M149.63250096,118.0340538 L149.26500193,56.0681076 L149.26500193,36.0681076 L149.63250096,98.0340538 L149.63250096,118.0340538 "></path>
+
+            
+            <path fill="darkgray" stroke-width="1" stroke="darkgray"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+            
+            <path fill="goldenrod" stroke-width="1" stroke="goldenrod"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M150.36749904,101.9659462 L150.73499807,43.9318924 A90,60,0,0,1,234.04238745,81.2272294 M234.04238745,81.2272294 L150.36749904,101.9659462"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M150.36749904,101.9659462 L234.04238745,81.2272294 A90,60,0,0,1,213.78387145,146.74850166 M213.78387145,146.74850166 L150.36749904,101.9659462"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M150.36749904,101.9659462 L213.78387145,146.74850166 A90,60,0,0,1,115.14438945,159.04111154 M115.14438945,159.04111154 L150.36749904,101.9659462"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M150.36749904,101.9659462 L115.14438945,159.04111154 A90,60,0,0,1,60.75036553,102.8231581 M60.75036553,102.8231581 L150.36749904,101.9659462"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M150.36749904,101.9659462 L60.75036553,102.8231581 A90,60,0,0,1,118.22324811,47.98355863 M118.22324811,47.98355863 L150.36749904,101.9659462"></path>
+
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M149.63250096,98.0340538 L116.75325197,40.11977384 A90,60,0,0,1,123.03992471,38.67184243 M123.03992471,38.67184243 L149.63250096,98.0340538"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M149.63250096,98.0340538 L123.03992471,38.67184243 A90,60,0,0,1,129.46982972,37.53738952 M129.46982972,37.53738952 L149.63250096,98.0340538"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M149.63250096,98.0340538 L129.46982972,37.53738952 A90,60,0,0,1,136.0078491,36.7226111 M136.0078491,36.7226111 L149.63250096,98.0340538"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M149.63250096,98.0340538 L136.0078491,36.7226111 A90,60,0,0,1,142.61827446,36.2319572 M142.61827446,36.2319572 L149.63250096,98.0340538"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M149.63250096,98.0340538 L142.61827446,36.2319572 A90,60,0,0,1,149.26500193,36.0681076 M149.26500193,36.0681076 L149.63250096,98.0340538"></path>
+			            <text x="280"
+			            	 y="67.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">94% (32) Passed</text>
+			           <circle cx="270"
+			            cy="62.5"
+			             r="5" stroke="darkgreen" stroke-width="1" fill="green" />
+			            <text x="280"
+			            	 y="97.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">6% (2) Failed</text>
+			           <circle cx="270"
+			            cy="92.5"
+			             r="5" stroke="darkred" stroke-width="1" fill="red" />
+			            <text x="280"
+			            	 y="127.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Undefined</text>
+			           <circle cx="270"
+			            cy="122.5"
+			             r="5" stroke="darkgray" stroke-width="1" fill="silver" />
+			            <text x="280"
+			            	 y="157.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Known</text>
+			           <circle cx="270"
+			            cy="152.5"
+			             r="5" stroke="goldenrod" stroke-width="1" fill="gold" />
+                    </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+	</tr>
+	</table>
+
+<h1>Summary</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">3</td>
+		<td class="failed" id="features_failed">2</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">5</td>
+		<td id="features_rate">
+				60%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">32</td>
+		<td class="failed" id="scenarios_failed">2</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">34</td>
+		<td id="scenarios_rate">
+				94%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">313</td>
+		<td class="failed" id="steps_failed">2</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">2</td>
+		<td id="steps_total">317</td>
+		<td id="steps_rate">
+				99%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 06m 20s</b></div>
+	
+<h1>Features Status</h1>
+	
+<table>
+	<tr>
+		<th>Feature Name</th>
+		<th>Status</th>
+		<th>Passed</th>
+		<th>Failed</th>
+		<th>Known</th>
+		<th>Undefined</th>
+		<th>Total</th>
+		<th>Duration</th>
+	</tr>
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>passed</td>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>10</td>
+		<td>102.37s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Delete employee</td>
+		<td>passed</td>
+		<td>4</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>4</td>
+		<td>81.54s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>passed</td>
+		<td>9</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>9</td>
+		<td>89.38s</td>
+	</tr>	
+	<tr class="failed">
+		<td>user login</td>
+		<td>failed</td>
+		<td>8</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>9</td>
+		<td>61.69s</td>
+	</tr>	
+	<tr class="failed">
+		<td>Logout user</td>
+		<td>failed</td>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>2</td>
+		<td>45.59s</td>
+	</tr>	
+
+</table>
+	
+<h1>Scenario Status</h1>
+
+<table>
+	<tr>
+		<th>Feature Name</th>
+		<th>Scenario</th>
+		<th>Status</th>
+		<th>Passed</th>
+		<th>Failed</th>
+		<th>Known</th>
+		<th>Undefined</th>
+		<th>Total</th>
+		<th>Retries</th>
+		<th>Duration</th>
+	</tr>
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for create button is enabled in homepage</td>
+		<td>passed</td>
+		<td>5</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>5</td>
+		<td>0</td>
+		<td>9.44s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for all fields appeared when create button is clicked</td>
+		<td>passed</td>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>10</td>
+		<td>0</td>
+		<td>8.46s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for validation error if first name is not entered and add button is clicked</td>
+		<td>passed</td>
+		<td>12</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>12</td>
+		<td>0</td>
+		<td>9.53s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for validation error if last name is not entered and add button is clicked</td>
+		<td>passed</td>
+		<td>12</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>12</td>
+		<td>0</td>
+		<td>8.84s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for validation error if start date is not entered and add button is clicked</td>
+		<td>passed</td>
+		<td>12</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>12</td>
+		<td>0</td>
+		<td>9.39s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for validation error if email is not entered and add button is clicked</td>
+		<td>passed</td>
+		<td>12</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>12</td>
+		<td>0</td>
+		<td>9.29s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for validation error if startdate entered is invalid and add button is clicked</td>
+		<td>passed</td>
+		<td>14</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>14</td>
+		<td>0</td>
+		<td>19.70s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check the success of create operation when all fields are filled correctly and newly added employee is listed in home page</td>
+		<td>passed</td>
+		<td>13</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>13</td>
+		<td>0</td>
+		<td>11.67s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check edit and delete button get enabled when employee from the list is selected</td>
+		<td>passed</td>
+		<td>7</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>7</td>
+		<td>0</td>
+		<td>8.05s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check edit and delete button get enabled when employee from the list is selected</td>
+		<td>passed</td>
+		<td>7</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>7</td>
+		<td>0</td>
+		<td>8.00s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Delete employee</td>
+		<td>Check for delete button is disabled in home page</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>8.16s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Delete employee</td>
+		<td>Check for delete button gets enabled when employee from list is selected in home page</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>8.32s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Delete employee</td>
+		<td>Check for validation alert pop if existing employee is selected to delete  ,employee gets deleted from loginpage if alert is accepted</td>
+		<td>passed</td>
+		<td>21</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>21</td>
+		<td>0</td>
+		<td>47.67s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Delete employee</td>
+		<td>Check for validation alert pop if existing employee is selected to delete  ,employee not deleted from loginpage if alert is dismiss</td>
+		<td>passed</td>
+		<td>22</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>22</td>
+		<td>0</td>
+		<td>17.39s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for edit button is disabled in home page</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>7.62s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for edit button gets enabled when employee from list is selected in home page</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>8.75s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for all field in a employee form have vaild data when edit button is clicked</td>
+		<td>passed</td>
+		<td>14</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>14</td>
+		<td>0</td>
+		<td>8.95s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for first name field is editable and updated correctly</td>
+		<td>passed</td>
+		<td>19</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>19</td>
+		<td>0</td>
+		<td>13.75s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for lastname field is editable and updated correctly</td>
+		<td>passed</td>
+		<td>21</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>21</td>
+		<td>0</td>
+		<td>12.98s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for employee startdate get updated successfully if new startdate is valid</td>
+		<td>passed</td>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>10</td>
+		<td>0</td>
+		<td>10.64s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for validation error if new start date is invalid</td>
+		<td>passed</td>
+		<td>9</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>9</td>
+		<td>0</td>
+		<td>8.30s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for employee email details get updated successfully if new email is valid</td>
+		<td>passed</td>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>10</td>
+		<td>0</td>
+		<td>9.72s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for validation failure if employee email details are incorrect during update</td>
+		<td>passed</td>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>10</td>
+		<td>0</td>
+		<td>8.67s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check all mandatory field in login page is marked with asterix  *</td>
+		<td>passed</td>
+		<td>3</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>3</td>
+		<td>0</td>
+		<td>6.21s</td>
+	</tr>	
+	<tr class="failed">
+		<td>user login</td>
+		<td>Check for text field username and password appeared in login page, Check submit button "Login" exist</td>
+		<td>failed</td>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		<td>2</td>
+		<td>4</td>
+		<td>0</td>
+		<td>6.09s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for successful login using valid credentials and verify repeater element to show "employee list" appeared in home page</td>
+		<td>passed</td>
+		<td>5</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>5</td>
+		<td>0</td>
+		<td>7.79s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if either or both username and password is incorrect and Login button is clicked</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>6.30s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if either or both username and password is incorrect and Login button is clicked</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>7.64s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if either or both username and password is incorrect and Login button is clicked</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>7.36s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if username field blank and Login button is clicked</td>
+		<td>passed</td>
+		<td>4</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>4</td>
+		<td>0</td>
+		<td>6.91s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if password field blank and Login button is clicked</td>
+		<td>passed</td>
+		<td>4</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>4</td>
+		<td>0</td>
+		<td>6.68s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if both username and password are blank and Login button is clicked</td>
+		<td>passed</td>
+		<td>3</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>3</td>
+		<td>0</td>
+		<td>6.72s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Logout user</td>
+		<td>Check for logout button appeared once user is logged on</td>
+		<td>passed</td>
+		<td>5</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>5</td>
+		<td>0</td>
+		<td>7.55s</td>
+	</tr>	
+	<tr class="failed">
+		<td>Logout user</td>
+		<td>Check for logout button return back to user login page and username/password is blank</td>
+		<td>failed</td>
+		<td>6</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>7</td>
+		<td>0</td>
+		<td>38.05s</td>
+	</tr>	
+</table>	
+	</body>
+</html>

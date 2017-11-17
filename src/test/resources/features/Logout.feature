@@ -2,7 +2,7 @@
 Feature: Logout user
 
   Scenario Outline: Check for logout button appeared once user is logged on
-    Given I am in app homepage
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having <login_access_type> "<login_access_value>"
@@ -12,7 +12,7 @@ Feature: Logout user
     |Testdata1|buttonText       |Login             |//p[contains(text(),'Logout')]|
 
   Scenario Outline: Check for logout button return back to user login page and username/password is blank
-    Given I am in app homepage
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having <login_access_type> "<login_access_value>"

@@ -8,20 +8,20 @@ import com.github.mkolisnyk.cucumber.runner.ExtendedTestNGRunner;
 import cucumber.api.CucumberOptions;
 import env.DriverUtil;
 
-@ExtendedCucumberOptions(jsonReport = "target/cucumber.json",
+@ExtendedCucumberOptions(jsonReport = "Reports/cucumber.json",
         detailedReport = true,
         detailedAggregatedReport = true,
         overviewReport = true,
         coverageReport = true,
-        jsonUsageReport = "target/cucumber-usage.json",
+        jsonUsageReport = "Reports/cucumber-usage.json",
         usageReport = true,
         toPDF = true,
         excludeCoverageTags = {"@flaky" },
         includeCoverageTags = {"@passed" },
-        outputFolder = "target")
-@CucumberOptions(plugin = { "html:target/cucumber-html-report",
-        "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt",
-        "usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml" },
+        outputFolder = "Reports")
+@CucumberOptions(plugin = { "html:Reports/cucumber-html-report",
+        "json:Reports/cucumber.json", "pretty:Reports/cucumber-pretty.txt",
+        "usage:Reports/cucumber-usage.json", "junit:Reports/cucumber-results.xml" },
         features = { "./src/test/resources/features" },
         glue = { "info.seleniumcucumber.stepdefinitions" })
 

@@ -1,0 +1,3926 @@
+<html>
+	<head>
+		<style type="text/css">
+h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+.none {border:0px none black;}
+table{border:1px solid black;border-collapse: collapse;}
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+        </style>
+        <title>Cucumber Steps Usage Report</title>
+    </head>
+    <body>
+    	<h1>Cucumber Usage Statistics</h1>
+    	<h2>Overview Graph</h2>
+    	<p>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+	width="500"
+    height="400">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+        	<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%" fy="100%">
+            <stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+            <stop offset="100%" style="stop-color:gold;stop-opacity:0.7" />
+        </radialGradient>
+        <linearGradient id="grad2" cx="0%" cy="100%" r="150%" fx="0%" fy="100%">
+        	<stop offset="0%" style="stop-color:red;stop-opacity:0.7" />
+            <stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+            <stop offset="100%" style="stop-color:green;stop-opacity:0.7" />
+        </linearGradient>
+    </defs>
+    <rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)" />
+		<line x1="40" y1="30" x2="40" y2="300" style="stroke:black;stroke-width:1" />
+        <line x1="40" y1="300" x2="350" y2="300" style="stroke:black;stroke-width:1" />
+        <polygon points="35,50 40,30 45,50"
+            style="fill:black;stroke:black;stroke-width:1" />
+        <polygon points="350,300 330,305 330,295"
+            style="fill:black;stroke:black;stroke-width:1" />
+        <polygon points="40,300
+        		 40,300
+        		 42.621,108
+        		 45.243,252
+        		 47.864,252
+        		 50.485,252
+        		 53.107,252
+        		 55.728,156
+        		 58.35,252
+        		 60.971,300
+        		 63.592,252
+        		 66.214,252
+        		 68.835,252
+        		 71.456,300
+        		 74.078,300
+        		 76.699,252
+        		 79.32,300
+        		 81.942,300
+        		 84.563,300
+        		 87.184,300
+        		 89.806,300
+        		 92.427,300
+        		 95.049,300
+        		 97.67,252
+        		 100.291,300
+        		 102.913,300
+        		 105.534,300
+        		 108.155,300
+        		 110.777,300
+        		 113.398,300
+        		 116.019,300
+        		 118.641,300
+        		 121.262,300
+        		 123.883,300
+        		 126.505,300
+        		 129.126,252
+        		 131.748,300
+        		 134.369,300
+        		 136.99,300
+        		 139.612,300
+        		 142.233,300
+        		 144.854,300
+        		 147.476,300
+        		 150.097,300
+        		 152.718,300
+        		 155.34,300
+        		 157.961,300
+        		 160.583,300
+        		 163.204,300
+        		 165.825,300
+        		 168.447,300
+        		 171.068,300
+        		 173.689,300
+        		 176.311,300
+        		 178.932,300
+        		 181.553,300
+        		 184.175,300
+        		 186.796,300
+        		 189.417,300
+        		 192.039,300
+        		 194.66,300
+        		 197.282,300
+        		 199.903,300
+        		 202.524,300
+        		 205.146,300
+        		 207.767,300
+        		 210.388,300
+        		 213.01,300
+        		 215.631,300
+        		 218.252,252
+        		 220.874,300
+        		 223.495,300
+        		 226.117,300
+        		 228.738,300
+        		 231.359,300
+        		 233.981,300
+        		 236.602,300
+        		 239.223,300
+        		 241.845,300
+        		 244.466,300
+        		 247.087,300
+        		 249.709,300
+        		 252.33,300
+        		 254.951,300
+        		 257.573,300
+        		 260.194,300
+        		 262.816,300
+        		 265.437,300
+        		 268.058,300
+        		 270.68,300
+        		 273.301,300
+        		 275.922,300
+        		 278.544,300
+        		 281.165,300
+        		 283.786,300
+        		 286.408,300
+        		 289.029,300
+        		 291.65,300
+        		 294.272,300
+        		 296.893,300
+        		 299.515,300
+        		 302.136,300
+        		 304.757,300
+        		 307.379,252
+        		 310,300
+        " style="stroke:black;stroke-width:1"  fill="url(#grad2)" />
+
+			<line x1="40"
+				y1="300"
+				x2="40" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="40" y="310" font-size="8">0</text>
+			<line x1="72.621"
+				y1="300"
+				x2="72.621" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="72.621" y="310" font-size="8">12</text>
+			<line x1="105.243"
+				y1="300"
+				x2="105.243" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="105.243" y="310" font-size="8">25</text>
+			<line x1="137.864"
+				y1="300"
+				x2="137.864" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="137.864" y="310" font-size="8">37</text>
+			<line x1="170.485"
+				y1="300"
+				x2="170.485" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="170.485" y="310" font-size="8">50</text>
+			<line x1="203.107"
+				y1="300"
+				x2="203.107" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="203.107" y="310" font-size="8">62</text>
+			<line x1="235.728"
+				y1="300"
+				x2="235.728" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="235.728" y="310" font-size="8">75</text>
+			<line x1="268.35"
+				y1="300"
+				x2="268.35" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="268.35" y="310" font-size="8">87</text>
+			<line x1="300.971"
+				y1="300"
+				x2="300.971" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="300.971" y="310" font-size="8">100</text>
+			<line x1="333.592"
+				y1="300"
+				x2="333.592" y2="305"
+					style="stroke:black;stroke-width:1" />
+            <text x="333.592" y="310" font-size="8">112</text>
+
+			<line x1="40" y1="300"
+				x2="35" y2="300"
+				style="stroke:black;stroke-width:1" />
+            <text x="35" y="300"
+            	transform="rotate(-90 35,300)" font-size = "8">0</text>
+			<line x1="40" y1="222"
+				x2="35" y2="222"
+				style="stroke:black;stroke-width:1" />
+            <text x="35" y="222"
+            	transform="rotate(-90 35,222)" font-size = "8">2</text>
+			<line x1="40" y1="144"
+				x2="35" y2="144"
+				style="stroke:black;stroke-width:1" />
+            <text x="35" y="144"
+            	transform="rotate(-90 35,144)" font-size = "8">3</text>
+			<line x1="40" y1="66"
+				x2="35" y2="66"
+				style="stroke:black;stroke-width:1" />
+            <text x="35" y="66"
+            	transform="rotate(-90 35,66)" font-size = "8">5</text>
+
+
+
+
+        <line stroke-dasharray="10,10" x1="55.728" y1="30"
+        	 x2="55.728" y2="300" style="stroke:yellow;stroke-width:3" />
+        <line stroke-dasharray="10,10" x1="81.024" y1="30"
+        	 x2="81.024" y2="300" style="stroke:red;stroke-width:3" />
+        <rect x="60%" y="20%" width="28%" height="20%" stroke="black"
+             stroke-width="1" fill="white" filter="url(#f1)" />
+        <line x1="62%" y1="29%" x2="67%" y2="29%" stroke-dasharray="5,5"
+             style="stroke:red;stroke-width:3" />
+         <text x="69%" y="30%"
+             font-weight = "bold" font-size = "12">Average: 15.7</text>"
+        <line x1="62%" y1="34%" x2="67%" y2="34%" stroke-dasharray="5,5"
+        	style="stroke:yellow;stroke-width:3" /><text x="69%" y="35%"
+        	 font-weight = "bold" font-size = "12">Median: 6</text>
+        <text x="60%" y="55%" font-weight = "bold" font-size = "40" fill="green">93.6%</text>
+        <text x="66%" y="60%" font-weight = "bold" font-size = "16" fill="green">Re-use</text>
+        <text x="120" y="330" font-weight = "bold" font-size = "14" >Step re-use count</text>
+        <text x="20" y="220" font-weight = "bold" font-size = "14"
+         transform="rotate(-90 20,220)">Steps count</text>
+
+</svg>
+        </p>
+        <h2>Overview Table</h2>
+        <p>
+        <table>
+        	<tr>
+        		<th rowspan="2"><a id="top">#</a></th>
+        		<th rowspan="2">Expression</th>
+        		<th rowspan="2">Occurences</th>
+        		<th colspan="5">Duration</th>
+    		</tr>
+    		<tr>
+        		<th>Average</th>
+        		<th>Median</th>
+        		<th>Minimal</th>
+        		<th>Maximal</th>
+        		<th>Total</th>
+    		</tr>
+    		<tr style="background:lightgreen">
+    			<td>1</td>
+                <td width="60%"><a href="#_5EI_20enter_20_22(_5B_5E_22_5D*)_22_20into_20_22(_5B_5E_22_5D*)_22input_20field_20having_20(._2B)_20_22(_5B_5E_22_5D*)_22_24">^I enter "([^"]*)" into "([^"]*)"input field having (.+) "([^"]*)"$</a></td><td>102</td>
+               		<td>0.11s</td>
+               		<td>0.07s</td>
+               		<td>0.04s</td>
+               		<td>0.68s</td>
+               		<td>10.76s</td>
+            </tr>
+    		<tr style="background:lightgreen">
+    			<td>2</td>
+                <td width="60%"><a href="#_5EI_20click_20on_20element_20having_20(._2B)_20_22(.*_3F)_22_24">^I click on element having (.+) "(.*?)"$</a></td><td>68</td>
+               		<td>0.87s</td>
+               		<td>0.97s</td>
+               		<td>0.08s</td>
+               		<td>1.92s</td>
+               		<td>59.34s</td>
+            </tr>
+    		<tr style="background:lightgreen">
+    			<td>3</td>
+                <td width="60%"><a href="#_5EI_20am_20in_20app_20loginpage">^I am in app loginpage</a></td><td>34</td>
+               		<td>5.9s</td>
+               		<td>5.76s</td>
+               		<td>4.89s</td>
+               		<td>7.38s</td>
+               		<td>200.49s</td>
+            </tr>
+    		<tr style="background:lightgreen">
+    			<td>4</td>
+                <td width="60%"><a href="#_5EI_20wait_20(_5Cd_2B)_20ms_20for_20element_20having_20(._2B)_20_22(.*_3F)_22_20to_20display_24">^I wait (\d+) ms for element having (.+) "(.*?)" to display$</a></td><td>22</td>
+               		<td>0.08s</td>
+               		<td>0.08s</td>
+               		<td>0.03s</td>
+               		<td>0.13s</td>
+               		<td>1.66s</td>
+            </tr>
+    		<tr style="background:lightgreen">
+    			<td>5</td>
+                <td width="60%"><a href="#_5EI_20wait_20(_5Cd_2B)_20ms_20for_20element_20having_20(._2B)_20_22(.*_3F)_22_20to_20be_20enabled_24">^I wait (\d+) ms for element having (.+) "(.*?)" to be enabled$</a></td><td>14</td>
+               		<td>0.05s</td>
+               		<td>0.04s</td>
+               		<td>0.03s</td>
+               		<td>0.12s</td>
+               		<td>0.77s</td>
+            </tr>
+    		<tr style="background:lightgreen">
+    			<td>6</td>
+                <td width="60%"><a href="#_5EI_20assert_20element_20having_20(._2B)_20_22(.*_3F)_22_20and_20has_20class_20_22(.*_3F)_22_20should_5Cs*((_3F_3Anot)_3F)_5Cs_2Bbe_20present_24">^I assert element having (.+) "(.*?)" and has class "(.*?)" should\s*((?:not)?)\s+be present$</a></td><td>11</td>
+               		<td>0.03s</td>
+               		<td>0.03s</td>
+               		<td>0.01s</td>
+               		<td>0.06s</td>
+               		<td>0.33s</td>
+            </tr>
+    		<tr style="background:lightgreen">
+    			<td>7</td>
+                <td width="60%"><a href="#_5Eelement_20having_20(._2B)_22(_5B_5E_22_5D*)_22_20from_20_22(_5B_5E_22_5D*)_22_20_20should_5Cs*((_3F_3Anot)_3F)_5Cs_2Bbe_20present_24">^element having (.+)"([^"]*)" from "([^"]*)"  should\s*((?:not)?)\s+be present$</a></td><td>10</td>
+               		<td>3.1s</td>
+               		<td>0.05s</td>
+               		<td>0.04s</td>
+               		<td>30.42s</td>
+               		<td>30.96s</td>
+            </tr>
+    		<tr style="background:gold">
+    			<td>8</td>
+                <td width="60%"><a href="#_5EI_20click_20on_20repeater_20element_20having_20repeater_20_22(.*_3F)_22_24">^I click on repeater element having repeater "(.*?)"$</a></td><td>9</td>
+               		<td>0.31s</td>
+               		<td>0.3s</td>
+               		<td>0.26s</td>
+               		<td>0.36s</td>
+               		<td>2.81s</td>
+            </tr>
+    		<tr style="background:gold">
+    			<td>9</td>
+                <td width="60%"><a href="#_5EI_20take_20screenshot_24">^I take screenshot$</a></td><td>7</td>
+               		<td>0.23s</td>
+               		<td>0.19s</td>
+               		<td>0.15s</td>
+               		<td>0.38s</td>
+               		<td>1.63s</td>
+            </tr>
+    		<tr style="background:gold">
+    			<td>10</td>
+                <td width="60%"><a href="#_5EI_20scroll_20to_20bottom_20of_20page_24">^I scroll to bottom of page$</a></td><td>6</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+               		<td>0s</td>
+               		<td>0.01s</td>
+               		<td>0.04s</td>
+            </tr>
+    		<tr style="background:gold">
+    			<td>11</td>
+                <td width="60%"><a href="#_5Eelement_20having_20(._2B)_20_22(_5B_5E_22_5D*)_22_20should_5Cs*((_3F_3Anot)_3F)_5Cs_2Bbe_20(enabled_7Cdisabled)_24">^element having (.+) "([^"]*)" should\s*((?:not)?)\s+be (enabled|disabled)$</a></td><td>6</td>
+               		<td>0.04s</td>
+               		<td>0.04s</td>
+               		<td>0.02s</td>
+               		<td>0.05s</td>
+               		<td>0.21s</td>
+            </tr>
+    		<tr style="background:gold">
+    			<td>12</td>
+                <td width="60%"><a href="#_5EI_20clear_20input_20field_20having_20(._2B)_20_22(_5B_5E_22_5D*)_22_24">^I clear input field having (.+) "([^"]*)"$</a></td><td>6</td>
+               		<td>0.11s</td>
+               		<td>0.13s</td>
+               		<td>0.02s</td>
+               		<td>0.14s</td>
+               		<td>0.64s</td>
+            </tr>
+    		<tr style="background:gold">
+    			<td>13</td>
+                <td width="60%"><a href="#_5EI_20assert_20repeater_20element_20having_20_22(_5B_5E_22_5D*)_22_20should_20have_20_22(_5B_5E_22_5D*)_22_20from_20_22(_5B_5E_22_5D*)_22_20have_20text_20present_24">^I assert repeater element having "([^"]*)" should have "([^"]*)" from "([^"]*)" have text present$</a></td><td>5</td>
+               		<td>1s</td>
+               		<td>1s</td>
+               		<td>0.85s</td>
+               		<td>1.19s</td>
+               		<td>5s</td>
+            </tr>
+    		<tr style="background:gold">
+    			<td>14</td>
+                <td width="60%"><a href="#_5EI_20click_20on_20repeater_20element_20having_20text_20_22(_5B_5E_22_5D*)_22_20should_20have_20_22(_5B_5E_22_5D*)_22_20from_20_20_22(_5B_5E_22_5D*)_22_20to_20be_20clicked_24">^I click on repeater element having text "([^"]*)" should have "([^"]*)" from  "([^"]*)" to be clicked$</a></td><td>4</td>
+               		<td>1.02s</td>
+               		<td>1.05s</td>
+               		<td>0.91s</td>
+               		<td>1.09s</td>
+               		<td>4.08s</td>
+            </tr>
+    		<tr style="background:tomato">
+    			<td>15</td>
+                <td width="60%"><a href="#_5EI_20assert_20element_20having_20(._2B)_20_22(_5B_5E_22_5D*)_22_20should_5Cs*((_3F_3Anot)_3F)_5Cs_2Bhave_20text_20as_20_22(.*_3F)_22_24">^I assert element having (.+) "([^"]*)" should\s*((?:not)?)\s+have text as "(.*?)"$</a></td><td>3</td>
+               		<td>0.02s</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+               		<td>0.03s</td>
+               		<td>0.05s</td>
+            </tr>
+    		<tr style="background:tomato">
+    			<td>16</td>
+                <td width="60%"><a href="#_5EI_20wait_20for_20(_5Cd_2B)_20sec_24">^I wait for (\d+) sec$</a></td><td>2</td>
+               		<td>5s</td>
+               		<td>5.01s</td>
+               		<td>5s</td>
+               		<td>5.01s</td>
+               		<td>10.01s</td>
+            </tr>
+    		<tr style="background:tomato">
+    			<td>17</td>
+                <td width="60%"><a href="#_5Eelement_20having_20(._2B)_20_22(_5B_5E_22_5D*)_22_20should_5Cs*((_3F_3Anot)_3F)_5Cs_2Bhave_20attribute_20_22(.*_3F)_22_20with_20value_20_22(.*_3F)_22_24">^element having (.+) "([^"]*)" should\s*((?:not)?)\s+have attribute "(.*?)" with value "(.*?)"$</a></td><td>1</td>
+               		<td>0.05s</td>
+               		<td>0.05s</td>
+               		<td>0.05s</td>
+               		<td>0.05s</td>
+               		<td>0.05s</td>
+            </tr>
+    		<tr style="background:tomato">
+    			<td>18</td>
+                <td width="60%"><a href="#_5EI_20accept_20alert_24">^I accept alert$</a></td><td>1</td>
+               		<td>10.13s</td>
+               		<td>10.13s</td>
+               		<td>10.13s</td>
+               		<td>10.13s</td>
+               		<td>10.13s</td>
+            </tr>
+    		<tr style="background:tomato">
+    			<td>19</td>
+                <td width="60%"><a href="#_5EI_20assert_20message_20from_20alert_20should_20be_20_22(_5B_5E_22_5D*)_22_20and_20dismiss_20alert_24">^I assert message from alert should be "([^"]*)" and dismiss alert$</a></td><td>1</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+            </tr>
+    		<tr style="background:tomato">
+    			<td>20</td>
+                <td width="60%"><a href="#_5EI_20assert_20message_20from_20alert_20should_20be_20_22(_5B_5E_22_5D*)_22_20and_20accept_20alert_24">^I assert message from alert should be "([^"]*)" and accept alert$</a></td><td>1</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+               		<td>0.01s</td>
+            </tr>
+    	</table>
+        </p>
+        <h1>Cucumber Usage Detailed Information</h1>
+
+        	<h3><a id="_5EI_20enter_20_22(_5B_5E_22_5D*)_22_20into_20_22(_5B_5E_22_5D*)_22input_20field_20having_20(._2B)_20_22(_5B_5E_22_5D*)_22_24">^I enter "([^"]*)" into "([^"]*)"input field having (.+) "([^"]*)"$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="12">I enter "Testdata1" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.127</td>
+    						<td>CreateEmployee.feature:6</td>
+						</tr>
+    					<tr>
+    						<td>0.094</td>
+    						<td>CreateEmployee.feature:145</td>
+						</tr>
+    					<tr>
+    						<td>0.088</td>
+    						<td>CreateEmployee.feature:145</td>
+						</tr>
+    					<tr>
+    						<td>0.095</td>
+    						<td>DeleteEmp.feature:6</td>
+						</tr>
+    					<tr>
+    						<td>0.15</td>
+    						<td>DeleteEmp.feature:17</td>
+						</tr>
+    					<tr>
+    						<td>0.069</td>
+    						<td>EditEmp.feature:7</td>
+						</tr>
+    					<tr>
+    						<td>0.077</td>
+    						<td>EditEmp.feature:18</td>
+						</tr>
+    					<tr>
+    						<td>0.177</td>
+    						<td>EditEmp.feature:29</td>
+						</tr>
+    					<tr>
+    						<td>0.179</td>
+    						<td>Login.feature:23</td>
+						</tr>
+    					<tr>
+    						<td>0.079</td>
+    						<td>Logout.feature:6</td>
+						</tr>
+    					<tr>
+    						<td>0.072</td>
+    						<td>Logout.feature:16</td>
+						</tr>
+    				<tr><td rowspan="12">I enter "Testdata1" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.058</td>
+    						<td>CreateEmployee.feature:7</td>
+						</tr>
+    					<tr>
+    						<td>0.043</td>
+    						<td>CreateEmployee.feature:146</td>
+						</tr>
+    					<tr>
+    						<td>0.051</td>
+    						<td>CreateEmployee.feature:146</td>
+						</tr>
+    					<tr>
+    						<td>0.062</td>
+    						<td>DeleteEmp.feature:7</td>
+						</tr>
+    					<tr>
+    						<td>0.053</td>
+    						<td>DeleteEmp.feature:18</td>
+						</tr>
+    					<tr>
+    						<td>0.052</td>
+    						<td>EditEmp.feature:8</td>
+						</tr>
+    					<tr>
+    						<td>0.059</td>
+    						<td>EditEmp.feature:19</td>
+						</tr>
+    					<tr>
+    						<td>0.049</td>
+    						<td>EditEmp.feature:30</td>
+						</tr>
+    					<tr>
+    						<td>0.302</td>
+    						<td>Login.feature:24</td>
+						</tr>
+    					<tr>
+    						<td>0.045</td>
+    						<td>Logout.feature:7</td>
+						</tr>
+    					<tr>
+    						<td>0.054</td>
+    						<td>Logout.feature:17</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "CreateEmp1" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.179</td>
+    						<td>CreateEmployee.feature:16</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "CreateEmp1" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.066</td>
+    						<td>CreateEmployee.feature:17</td>
+						</tr>
+    				<tr><td rowspan="7">I enter "CreateEmp2" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.093</td>
+    						<td>CreateEmployee.feature:32</td>
+						</tr>
+    					<tr>
+    						<td>0.172</td>
+    						<td>CreateEmployee.feature:50</td>
+						</tr>
+    					<tr>
+    						<td>0.185</td>
+    						<td>CreateEmployee.feature:68</td>
+						</tr>
+    					<tr>
+    						<td>0.11</td>
+    						<td>CreateEmployee.feature:86</td>
+						</tr>
+    					<tr>
+    						<td>0.144</td>
+    						<td>CreateEmployee.feature:105</td>
+						</tr>
+    					<tr>
+    						<td>0.195</td>
+    						<td>CreateEmployee.feature:125</td>
+						</tr>
+    				<tr><td rowspan="7">I enter "CreateEmp2" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.06</td>
+    						<td>CreateEmployee.feature:33</td>
+						</tr>
+    					<tr>
+    						<td>0.053</td>
+    						<td>CreateEmployee.feature:51</td>
+						</tr>
+    					<tr>
+    						<td>0.208</td>
+    						<td>CreateEmployee.feature:69</td>
+						</tr>
+    					<tr>
+    						<td>0.049</td>
+    						<td>CreateEmployee.feature:87</td>
+						</tr>
+    					<tr>
+    						<td>0.061</td>
+    						<td>CreateEmployee.feature:106</td>
+						</tr>
+    					<tr>
+    						<td>0.069</td>
+    						<td>CreateEmployee.feature:126</td>
+						</tr>
+    				<tr><td rowspan="6">I enter "CreateEmp2" into "lastname"input field having model "selectedEmployee.lastName"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.039</td>
+    						<td>CreateEmployee.feature:38</td>
+						</tr>
+    					<tr>
+    						<td>0.051</td>
+    						<td>CreateEmployee.feature:75</td>
+						</tr>
+    					<tr>
+    						<td>0.067</td>
+    						<td>CreateEmployee.feature:93</td>
+						</tr>
+    					<tr>
+    						<td>0.057</td>
+    						<td>CreateEmployee.feature:112</td>
+						</tr>
+    					<tr>
+    						<td>0.27</td>
+    						<td>CreateEmployee.feature:132</td>
+						</tr>
+    				<tr><td rowspan="5">I enter "CreateEmp2" into "startdate"input field having model "selectedEmployee.startDate"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.056</td>
+    						<td>CreateEmployee.feature:39</td>
+						</tr>
+    					<tr>
+    						<td>0.288</td>
+    						<td>CreateEmployee.feature:57</td>
+						</tr>
+    					<tr>
+    						<td>0.683</td>
+    						<td>CreateEmployee.feature:94</td>
+						</tr>
+    					<tr>
+    						<td>0.09</td>
+    						<td>CreateEmployee.feature:133</td>
+						</tr>
+    				<tr><td rowspan="6">I enter "CreateEmp2" into "email"input field having model "selectedEmployee.email"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.085</td>
+    						<td>CreateEmployee.feature:40</td>
+						</tr>
+    					<tr>
+    						<td>0.074</td>
+    						<td>CreateEmployee.feature:58</td>
+						</tr>
+    					<tr>
+    						<td>0.079</td>
+    						<td>CreateEmployee.feature:76</td>
+						</tr>
+    					<tr>
+    						<td>0.09</td>
+    						<td>CreateEmployee.feature:114</td>
+						</tr>
+    					<tr>
+    						<td>0.076</td>
+    						<td>CreateEmployee.feature:134</td>
+						</tr>
+    				<tr><td rowspan="6">I enter "CreateEmp2" into "firstname"input field having model "selectedEmployee.firstName"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.087</td>
+    						<td>CreateEmployee.feature:56</td>
+						</tr>
+    					<tr>
+    						<td>0.072</td>
+    						<td>CreateEmployee.feature:74</td>
+						</tr>
+    					<tr>
+    						<td>0.069</td>
+    						<td>CreateEmployee.feature:92</td>
+						</tr>
+    					<tr>
+    						<td>0.046</td>
+    						<td>CreateEmployee.feature:111</td>
+						</tr>
+    					<tr>
+    						<td>0.192</td>
+    						<td>CreateEmployee.feature:131</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "CreateEmp2" into "invalid_startdate"input field having model "selectedEmployee.startDate"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.05</td>
+    						<td>CreateEmployee.feature:113</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata8" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.144</td>
+    						<td>DeleteEmp.feature:28</td>
+						</tr>
+    					<tr>
+    						<td>0.084</td>
+    						<td>EditEmp.feature:49</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata8" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.062</td>
+    						<td>DeleteEmp.feature:29</td>
+						</tr>
+    					<tr>
+    						<td>0.047</td>
+    						<td>EditEmp.feature:50</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata8" into "firstname"input field having model "selectedEmployee.firstName"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.074</td>
+    						<td>DeleteEmp.feature:34</td>
+						</tr>
+    					<tr>
+    						<td>0.155</td>
+    						<td>EditEmp.feature:55</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata8" into "lastname"input field having model "selectedEmployee.lastName"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.627</td>
+    						<td>DeleteEmp.feature:35</td>
+						</tr>
+    					<tr>
+    						<td>0.274</td>
+    						<td>EditEmp.feature:56</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata8" into "startdate"input field having model "selectedEmployee.startDate"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.069</td>
+    						<td>DeleteEmp.feature:36</td>
+						</tr>
+    					<tr>
+    						<td>0.057</td>
+    						<td>EditEmp.feature:57</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata8" into "email"input field having model "selectedEmployee.email"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.059</td>
+    						<td>DeleteEmp.feature:37</td>
+						</tr>
+    					<tr>
+    						<td>0.054</td>
+    						<td>EditEmp.feature:58</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata9" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.146</td>
+    						<td>DeleteEmp.feature:56</td>
+						</tr>
+    					<tr>
+    						<td>0.175</td>
+    						<td>EditEmp.feature:75</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata9" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.055</td>
+    						<td>DeleteEmp.feature:57</td>
+						</tr>
+    					<tr>
+    						<td>0.058</td>
+    						<td>EditEmp.feature:76</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata9" into "firstname"input field having model "selectedEmployee.firstName"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.138</td>
+    						<td>DeleteEmp.feature:62</td>
+						</tr>
+    					<tr>
+    						<td>0.036</td>
+    						<td>EditEmp.feature:81</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata9" into "lastname"input field having model "selectedEmployee.lastName"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.048</td>
+    						<td>DeleteEmp.feature:63</td>
+						</tr>
+    					<tr>
+    						<td>0.044</td>
+    						<td>EditEmp.feature:82</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata9" into "startdate"input field having model "selectedEmployee.startDate"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.064</td>
+    						<td>DeleteEmp.feature:64</td>
+						</tr>
+    					<tr>
+    						<td>0.065</td>
+    						<td>EditEmp.feature:83</td>
+						</tr>
+    				<tr><td rowspan="3">I enter "Testdata9" into "email"input field having model "selectedEmployee.email"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.056</td>
+    						<td>DeleteEmp.feature:65</td>
+						</tr>
+    					<tr>
+    						<td>0.06</td>
+    						<td>EditEmp.feature:84</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata8" into "firstname_newname"input field having model "selectedEmployee.firstName"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.076</td>
+    						<td>EditEmp.feature:64</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata9" into "lastname_newname"input field having model "selectedEmployee.lastName"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.045</td>
+    						<td>EditEmp.feature:91</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata10" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.094</td>
+    						<td>EditEmp.feature:102</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata10" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.057</td>
+    						<td>EditEmp.feature:103</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata10" into "startdate"input field having model "selectedEmployee.startDate"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.05</td>
+    						<td>EditEmp.feature:108</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata11" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.067</td>
+    						<td>EditEmp.feature:117</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata11" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.057</td>
+    						<td>EditEmp.feature:118</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata11" into "startdate"input field having model "selectedEmployee.startDate"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.105</td>
+    						<td>EditEmp.feature:123</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata12" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.143</td>
+    						<td>EditEmp.feature:132</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata12" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.05</td>
+    						<td>EditEmp.feature:133</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata12" into "email"input field having model "selectedEmployee.email"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.106</td>
+    						<td>EditEmp.feature:138</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata13" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.11</td>
+    						<td>EditEmp.feature:147</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata13" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.049</td>
+    						<td>EditEmp.feature:148</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata13" into "email"input field having model "selectedEmployee.email"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.048</td>
+    						<td>EditEmp.feature:153</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata2" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.082</td>
+    						<td>Login.feature:34</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata2" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.05</td>
+    						<td>Login.feature:35</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata3" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.114</td>
+    						<td>Login.feature:34</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata3" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.065</td>
+    						<td>Login.feature:35</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata4" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.169</td>
+    						<td>Login.feature:34</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata4" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.062</td>
+    						<td>Login.feature:35</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata6" into "password"input field having model "user.password"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.137</td>
+    						<td>Login.feature:50</td>
+						</tr>
+    				<tr><td rowspan="2">I enter "Testdata7" into "username"input field having model "user.name"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.168</td>
+    						<td>Login.feature:59</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,50
+	        	68,50
+	        	68,240 
+	        	68,240
+	        	68,202.535
+	        	96,202.535
+	        	96,240 
+	        	96,240
+	        	96,210.563
+	        	124,210.563
+	        	124,240 
+	        	124,240
+	        	124,231.972
+	        	152,231.972
+	        	152,240 
+	        	152,240
+	        	152,237.324
+	        	180,237.324
+	        	180,240 
+	        	180,240
+	        	180,240
+	        	208,240
+	        	208,240 
+	        	208,240
+	        	208,240
+	        	236,240
+	        	236,240 
+	        	236,240
+	        	236,240
+	        	264,240
+	        	264,240 
+	        	264,240
+	        	264,240
+	        	292,240
+	        	292,240 
+	        	292,240
+	        	292,234.648
+	        	320,234.648
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="47"
+				 	y="49" font-weight="bold" font-size="14">71</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.04
+        	</text>
+				<text x="75"
+				 	y="201" font-weight="bold" font-size="14">14</text>
+            <line x1="68" y1="240"
+            	  x2="68" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="70" y="248" font-size="8">
+            	0.1
+        	</text>
+				<text x="103"
+				 	y="209" font-weight="bold" font-size="14">11</text>
+            <line x1="96" y1="240"
+            	  x2="96" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="98" y="248" font-size="8">
+            	0.17
+        	</text>
+				<text x="131"
+				 	y="230" font-weight="bold" font-size="14">3</text>
+            <line x1="124" y1="240"
+            	  x2="124" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="126" y="248" font-size="8">
+            	0.23
+        	</text>
+				<text x="159"
+				 	y="236" font-weight="bold" font-size="14">1</text>
+            <line x1="152" y1="240"
+            	  x2="152" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="154" y="248" font-size="8">
+            	0.29
+        	</text>
+            <line x1="180" y1="240"
+            	  x2="180" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="182" y="248" font-size="8">
+            	0.36
+        	</text>
+            <line x1="208" y1="240"
+            	  x2="208" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="210" y="248" font-size="8">
+            	0.42
+        	</text>
+            <line x1="236" y1="240"
+            	  x2="236" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="238" y="248" font-size="8">
+            	0.49
+        	</text>
+            <line x1="264" y1="240"
+            	  x2="264" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="266" y="248" font-size="8">
+            	0.55
+        	</text>
+				<text x="299"
+				 	y="233" font-weight="bold" font-size="14">2</text>
+            <line x1="292" y1="240"
+            	  x2="292" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="294" y="248" font-size="8">
+            	0.62
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.11s</td></tr>
+		                <tr><th>Median</th><td>0.07s</td></tr>
+		                <tr><th>Variance</th><td>0.01</td></tr>
+		                <tr><th>Skewness</th><td>3.86</td></tr>
+		                <tr><th>Minimum</th><td>0.04s</td></tr>
+		                <tr><th>Maximum</th><td>0.68s</td></tr>
+		                <tr><th>Total</th><td>10.76s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20click_20on_20element_20having_20(._2B)_20_22(.*_3F)_22_24">^I click on element having (.+) "(.*?)"$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="33">I click on element having buttonText "Login"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>1.416</td>
+    						<td>CreateEmployee.feature:8</td>
+						</tr>
+    					<tr>
+    						<td>1.405</td>
+    						<td>CreateEmployee.feature:18</td>
+						</tr>
+    					<tr>
+    						<td>1.358</td>
+    						<td>CreateEmployee.feature:34</td>
+						</tr>
+    					<tr>
+    						<td>1.159</td>
+    						<td>CreateEmployee.feature:52</td>
+						</tr>
+    					<tr>
+    						<td>1.423</td>
+    						<td>CreateEmployee.feature:70</td>
+						</tr>
+    					<tr>
+    						<td>1.113</td>
+    						<td>CreateEmployee.feature:88</td>
+						</tr>
+    					<tr>
+    						<td>1.429</td>
+    						<td>CreateEmployee.feature:107</td>
+						</tr>
+    					<tr>
+    						<td>1.843</td>
+    						<td>CreateEmployee.feature:127</td>
+						</tr>
+    					<tr>
+    						<td>1.536</td>
+    						<td>CreateEmployee.feature:147</td>
+						</tr>
+    					<tr>
+    						<td>1.338</td>
+    						<td>CreateEmployee.feature:147</td>
+						</tr>
+    					<tr>
+    						<td>1.423</td>
+    						<td>DeleteEmp.feature:8</td>
+						</tr>
+    					<tr>
+    						<td>1.36</td>
+    						<td>DeleteEmp.feature:19</td>
+						</tr>
+    					<tr>
+    						<td>1.475</td>
+    						<td>DeleteEmp.feature:30</td>
+						</tr>
+    					<tr>
+    						<td>1.419</td>
+    						<td>DeleteEmp.feature:58</td>
+						</tr>
+    					<tr>
+    						<td>1.32</td>
+    						<td>EditEmp.feature:9</td>
+						</tr>
+    					<tr>
+    						<td>1.334</td>
+    						<td>EditEmp.feature:20</td>
+						</tr>
+    					<tr>
+    						<td>1.419</td>
+    						<td>EditEmp.feature:31</td>
+						</tr>
+    					<tr>
+    						<td>1.589</td>
+    						<td>EditEmp.feature:51</td>
+						</tr>
+    					<tr>
+    						<td>1.341</td>
+    						<td>EditEmp.feature:77</td>
+						</tr>
+    					<tr>
+    						<td>1.918</td>
+    						<td>EditEmp.feature:104</td>
+						</tr>
+    					<tr>
+    						<td>1.296</td>
+    						<td>EditEmp.feature:119</td>
+						</tr>
+    					<tr>
+    						<td>1.402</td>
+    						<td>EditEmp.feature:134</td>
+						</tr>
+    					<tr>
+    						<td>1.475</td>
+    						<td>EditEmp.feature:149</td>
+						</tr>
+    					<tr>
+    						<td>1.087</td>
+    						<td>Login.feature:25</td>
+						</tr>
+    					<tr>
+    						<td>0.245</td>
+    						<td>Login.feature:36</td>
+						</tr>
+    					<tr>
+    						<td>0.3</td>
+    						<td>Login.feature:36</td>
+						</tr>
+    					<tr>
+    						<td>0.779</td>
+    						<td>Login.feature:36</td>
+						</tr>
+    					<tr>
+    						<td>0.282</td>
+    						<td>Login.feature:51</td>
+						</tr>
+    					<tr>
+    						<td>0.249</td>
+    						<td>Login.feature:60</td>
+						</tr>
+    					<tr>
+    						<td>0.317</td>
+    						<td>Login.feature:69</td>
+						</tr>
+    					<tr>
+    						<td>1.315</td>
+    						<td>Logout.feature:8</td>
+						</tr>
+    					<tr>
+    						<td>1.302</td>
+    						<td>Logout.feature:18</td>
+						</tr>
+    				<tr><td rowspan="12">I click on element having id "bAdd"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.45</td>
+    						<td>CreateEmployee.feature:20</td>
+						</tr>
+    					<tr>
+    						<td>0.454</td>
+    						<td>CreateEmployee.feature:36</td>
+						</tr>
+    					<tr>
+    						<td>0.408</td>
+    						<td>CreateEmployee.feature:54</td>
+						</tr>
+    					<tr>
+    						<td>0.492</td>
+    						<td>CreateEmployee.feature:72</td>
+						</tr>
+    					<tr>
+    						<td>0.281</td>
+    						<td>CreateEmployee.feature:90</td>
+						</tr>
+    					<tr>
+    						<td>0.537</td>
+    						<td>CreateEmployee.feature:109</td>
+						</tr>
+    					<tr>
+    						<td>0.514</td>
+    						<td>CreateEmployee.feature:129</td>
+						</tr>
+    					<tr>
+    						<td>0.415</td>
+    						<td>DeleteEmp.feature:32</td>
+						</tr>
+    					<tr>
+    						<td>0.529</td>
+    						<td>DeleteEmp.feature:60</td>
+						</tr>
+    					<tr>
+    						<td>0.434</td>
+    						<td>EditEmp.feature:53</td>
+						</tr>
+    					<tr>
+    						<td>0.44</td>
+    						<td>EditEmp.feature:79</td>
+						</tr>
+    				<tr><td rowspan="11">I click on element having buttonText "Add"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.285</td>
+    						<td>CreateEmployee.feature:41</td>
+						</tr>
+    					<tr>
+    						<td>0.272</td>
+    						<td>CreateEmployee.feature:59</td>
+						</tr>
+    					<tr>
+    						<td>0.31</td>
+    						<td>CreateEmployee.feature:77</td>
+						</tr>
+    					<tr>
+    						<td>0.269</td>
+    						<td>CreateEmployee.feature:95</td>
+						</tr>
+    					<tr>
+    						<td>0.316</td>
+    						<td>CreateEmployee.feature:115</td>
+						</tr>
+    					<tr>
+    						<td>1.303</td>
+    						<td>CreateEmployee.feature:135</td>
+						</tr>
+    					<tr>
+    						<td>1.268</td>
+    						<td>DeleteEmp.feature:38</td>
+						</tr>
+    					<tr>
+    						<td>1.298</td>
+    						<td>DeleteEmp.feature:66</td>
+						</tr>
+    					<tr>
+    						<td>0.97</td>
+    						<td>EditEmp.feature:59</td>
+						</tr>
+    					<tr>
+    						<td>0.943</td>
+    						<td>EditEmp.feature:85</td>
+						</tr>
+    				<tr><td rowspan="3">I click on element having id "bDelete"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.08</td>
+    						<td>DeleteEmp.feature:43</td>
+						</tr>
+    					<tr>
+    						<td>0.077</td>
+    						<td>DeleteEmp.feature:71</td>
+						</tr>
+    				<tr><td rowspan="8">I click on element having id "bEdit"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.681</td>
+    						<td>EditEmp.feature:33</td>
+						</tr>
+    					<tr>
+    						<td>0.354</td>
+    						<td>EditEmp.feature:62</td>
+						</tr>
+    					<tr>
+    						<td>0.283</td>
+    						<td>EditEmp.feature:88</td>
+						</tr>
+    					<tr>
+    						<td>0.536</td>
+    						<td>EditEmp.feature:106</td>
+						</tr>
+    					<tr>
+    						<td>0.428</td>
+    						<td>EditEmp.feature:121</td>
+						</tr>
+    					<tr>
+    						<td>0.449</td>
+    						<td>EditEmp.feature:136</td>
+						</tr>
+    					<tr>
+    						<td>0.386</td>
+    						<td>EditEmp.feature:151</td>
+						</tr>
+    				<tr><td rowspan="6">I click on element having buttonText "Update"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>1.357</td>
+    						<td>EditEmp.feature:65</td>
+						</tr>
+    					<tr>
+    						<td>1.071</td>
+    						<td>EditEmp.feature:92</td>
+						</tr>
+    					<tr>
+    						<td>1.078</td>
+    						<td>EditEmp.feature:110</td>
+						</tr>
+    					<tr>
+    						<td>0.998</td>
+    						<td>EditEmp.feature:140</td>
+						</tr>
+    					<tr>
+    						<td>0.25</td>
+    						<td>EditEmp.feature:155</td>
+						</tr>
+    				<tr><td rowspan="2">I click on element having xpath "//p[contains(text(),'Logout')]"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.459</td>
+    						<td>Logout.feature:19</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,184.118
+	        	68,184.118
+	        	68,240 
+	        	68,240
+	        	68,50
+	        	96,50
+	        	96,240 
+	        	96,240
+	        	96,139.412
+	        	124,139.412
+	        	124,240 
+	        	124,240
+	        	124,217.647
+	        	152,217.647
+	        	152,240 
+	        	152,240
+	        	152,217.647
+	        	180,217.647
+	        	180,240 
+	        	180,240
+	        	180,172.941
+	        	208,172.941
+	        	208,240 
+	        	208,240
+	        	208,94.706
+	        	236,94.706
+	        	236,240 
+	        	236,240
+	        	236,117.059
+	        	264,117.059
+	        	264,240 
+	        	264,240
+	        	264,228.824
+	        	292,228.824
+	        	292,240 
+	        	292,240
+	        	292,217.647
+	        	320,217.647
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="47"
+				 	y="183" font-weight="bold" font-size="14">5</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.08
+        	</text>
+				<text x="75"
+				 	y="49" font-weight="bold" font-size="14">17</text>
+            <line x1="68" y1="240"
+            	  x2="68" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="70" y="248" font-size="8">
+            	0.26
+        	</text>
+				<text x="103"
+				 	y="138" font-weight="bold" font-size="14">9</text>
+            <line x1="96" y1="240"
+            	  x2="96" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="98" y="248" font-size="8">
+            	0.45
+        	</text>
+				<text x="131"
+				 	y="216" font-weight="bold" font-size="14">2</text>
+            <line x1="124" y1="240"
+            	  x2="124" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="126" y="248" font-size="8">
+            	0.63
+        	</text>
+				<text x="159"
+				 	y="216" font-weight="bold" font-size="14">2</text>
+            <line x1="152" y1="240"
+            	  x2="152" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="154" y="248" font-size="8">
+            	0.81
+        	</text>
+				<text x="187"
+				 	y="171" font-weight="bold" font-size="14">6</text>
+            <line x1="180" y1="240"
+            	  x2="180" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="182" y="248" font-size="8">
+            	1
+        	</text>
+				<text x="215"
+				 	y="93" font-weight="bold" font-size="14">13</text>
+            <line x1="208" y1="240"
+            	  x2="208" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="210" y="248" font-size="8">
+            	1.18
+        	</text>
+				<text x="243"
+				 	y="116" font-weight="bold" font-size="14">11</text>
+            <line x1="236" y1="240"
+            	  x2="236" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="238" y="248" font-size="8">
+            	1.37
+        	</text>
+				<text x="271"
+				 	y="227" font-weight="bold" font-size="14">1</text>
+            <line x1="264" y1="240"
+            	  x2="264" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="266" y="248" font-size="8">
+            	1.55
+        	</text>
+				<text x="299"
+				 	y="216" font-weight="bold" font-size="14">2</text>
+            <line x1="292" y1="240"
+            	  x2="292" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="294" y="248" font-size="8">
+            	1.73
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.87s</td></tr>
+		                <tr><th>Median</th><td>0.97s</td></tr>
+		                <tr><th>Variance</th><td>0.26</td></tr>
+		                <tr><th>Skewness</th><td>0.09</td></tr>
+		                <tr><th>Minimum</th><td>0.08s</td></tr>
+		                <tr><th>Maximum</th><td>1.92s</td></tr>
+		                <tr><th>Total</th><td>59.34s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20am_20in_20app_20loginpage">^I am in app loginpage</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="35">I am in app loginpage</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>7.383</td>
+    						<td>CreateEmployee.feature:5</td>
+						</tr>
+    					<tr>
+    						<td>5.806</td>
+    						<td>CreateEmployee.feature:15</td>
+						</tr>
+    					<tr>
+    						<td>6.484</td>
+    						<td>CreateEmployee.feature:31</td>
+						</tr>
+    					<tr>
+    						<td>5.757</td>
+    						<td>CreateEmployee.feature:49</td>
+						</tr>
+    					<tr>
+    						<td>5.988</td>
+    						<td>CreateEmployee.feature:67</td>
+						</tr>
+    					<tr>
+    						<td>6.071</td>
+    						<td>CreateEmployee.feature:85</td>
+						</tr>
+    					<tr>
+    						<td>6.3</td>
+    						<td>CreateEmployee.feature:104</td>
+						</tr>
+    					<tr>
+    						<td>5.632</td>
+    						<td>CreateEmployee.feature:124</td>
+						</tr>
+    					<tr>
+    						<td>5.706</td>
+    						<td>CreateEmployee.feature:144</td>
+						</tr>
+    					<tr>
+    						<td>5.672</td>
+    						<td>CreateEmployee.feature:144</td>
+						</tr>
+    					<tr>
+    						<td>5.929</td>
+    						<td>DeleteEmp.feature:5</td>
+						</tr>
+    					<tr>
+    						<td>6.059</td>
+    						<td>DeleteEmp.feature:16</td>
+						</tr>
+    					<tr>
+    						<td>4.892</td>
+    						<td>DeleteEmp.feature:27</td>
+						</tr>
+    					<tr>
+    						<td>5.632</td>
+    						<td>DeleteEmp.feature:55</td>
+						</tr>
+    					<tr>
+    						<td>5.656</td>
+    						<td>EditEmp.feature:6</td>
+						</tr>
+    					<tr>
+    						<td>6.518</td>
+    						<td>EditEmp.feature:17</td>
+						</tr>
+    					<tr>
+    						<td>5.705</td>
+    						<td>EditEmp.feature:28</td>
+						</tr>
+    					<tr>
+    						<td>5.748</td>
+    						<td>EditEmp.feature:48</td>
+						</tr>
+    					<tr>
+    						<td>5.659</td>
+    						<td>EditEmp.feature:74</td>
+						</tr>
+    					<tr>
+    						<td>6.174</td>
+    						<td>EditEmp.feature:101</td>
+						</tr>
+    					<tr>
+    						<td>5.532</td>
+    						<td>EditEmp.feature:116</td>
+						</tr>
+    					<tr>
+    						<td>5.75</td>
+    						<td>EditEmp.feature:131</td>
+						</tr>
+    					<tr>
+    						<td>5.61</td>
+    						<td>EditEmp.feature:146</td>
+						</tr>
+    					<tr>
+    						<td>5.693</td>
+    						<td>Login.feature:5</td>
+						</tr>
+    					<tr>
+    						<td>5.755</td>
+    						<td>Login.feature:13</td>
+						</tr>
+    					<tr>
+    						<td>5.816</td>
+    						<td>Login.feature:22</td>
+						</tr>
+    					<tr>
+    						<td>5.576</td>
+    						<td>Login.feature:33</td>
+						</tr>
+    					<tr>
+    						<td>6.778</td>
+    						<td>Login.feature:33</td>
+						</tr>
+    					<tr>
+    						<td>5.885</td>
+    						<td>Login.feature:33</td>
+						</tr>
+    					<tr>
+    						<td>6.112</td>
+    						<td>Login.feature:49</td>
+						</tr>
+    					<tr>
+    						<td>5.918</td>
+    						<td>Login.feature:58</td>
+						</tr>
+    					<tr>
+    						<td>6.048</td>
+    						<td>Login.feature:68</td>
+						</tr>
+    					<tr>
+    						<td>5.676</td>
+    						<td>Logout.feature:5</td>
+						</tr>
+    					<tr>
+    						<td>5.565</td>
+    						<td>Logout.feature:15</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,226.429
+	        	68,226.429
+	        	68,240 
+	        	68,240
+	        	68,240
+	        	96,240
+	        	96,240 
+	        	96,240
+	        	96,158.571
+	        	124,158.571
+	        	124,240 
+	        	124,240
+	        	124,50
+	        	152,50
+	        	152,240 
+	        	152,240
+	        	152,145
+	        	180,145
+	        	180,240 
+	        	180,240
+	        	180,212.857
+	        	208,212.857
+	        	208,240 
+	        	208,240
+	        	208,212.857
+	        	236,212.857
+	        	236,240 
+	        	236,240
+	        	236,226.429
+	        	264,226.429
+	        	264,240 
+	        	264,240
+	        	264,240
+	        	292,240
+	        	292,240 
+	        	292,240
+	        	292,226.429
+	        	320,226.429
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="47"
+				 	y="225" font-weight="bold" font-size="14">1</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	4.89
+        	</text>
+            <line x1="68" y1="240"
+            	  x2="68" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="70" y="248" font-size="8">
+            	5.14
+        	</text>
+				<text x="103"
+				 	y="157" font-weight="bold" font-size="14">6</text>
+            <line x1="96" y1="240"
+            	  x2="96" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="98" y="248" font-size="8">
+            	5.39
+        	</text>
+				<text x="131"
+				 	y="48" font-weight="bold" font-size="14">14</text>
+            <line x1="124" y1="240"
+            	  x2="124" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="126" y="248" font-size="8">
+            	5.64
+        	</text>
+				<text x="159"
+				 	y="143" font-weight="bold" font-size="14">7</text>
+            <line x1="152" y1="240"
+            	  x2="152" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="154" y="248" font-size="8">
+            	5.89
+        	</text>
+				<text x="187"
+				 	y="211" font-weight="bold" font-size="14">2</text>
+            <line x1="180" y1="240"
+            	  x2="180" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="182" y="248" font-size="8">
+            	6.14
+        	</text>
+				<text x="215"
+				 	y="211" font-weight="bold" font-size="14">2</text>
+            <line x1="208" y1="240"
+            	  x2="208" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="210" y="248" font-size="8">
+            	6.39
+        	</text>
+				<text x="243"
+				 	y="225" font-weight="bold" font-size="14">1</text>
+            <line x1="236" y1="240"
+            	  x2="236" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="238" y="248" font-size="8">
+            	6.64
+        	</text>
+            <line x1="264" y1="240"
+            	  x2="264" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="266" y="248" font-size="8">
+            	6.89
+        	</text>
+				<text x="299"
+				 	y="225" font-weight="bold" font-size="14">1</text>
+            <line x1="292" y1="240"
+            	  x2="292" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="294" y="248" font-size="8">
+            	7.13
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>5.9s</td></tr>
+		                <tr><th>Median</th><td>5.76s</td></tr>
+		                <tr><th>Variance</th><td>0.18</td></tr>
+		                <tr><th>Skewness</th><td>1.26</td></tr>
+		                <tr><th>Minimum</th><td>4.89s</td></tr>
+		                <tr><th>Maximum</th><td>7.38s</td></tr>
+		                <tr><th>Total</th><td>200.49s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20wait_20(_5Cd_2B)_20ms_20for_20element_20having_20(._2B)_20_22(.*_3F)_22_20to_20display_24">^I wait (\d+) ms for element having (.+) "(.*?)" to display$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="11">I wait 5 ms for element having buttonText "Add" to display</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.053</td>
+    						<td>CreateEmployee.feature:37</td>
+						</tr>
+    					<tr>
+    						<td>0.08</td>
+    						<td>CreateEmployee.feature:55</td>
+						</tr>
+    					<tr>
+    						<td>0.114</td>
+    						<td>CreateEmployee.feature:73</td>
+						</tr>
+    					<tr>
+    						<td>0.059</td>
+    						<td>CreateEmployee.feature:91</td>
+						</tr>
+    					<tr>
+    						<td>0.038</td>
+    						<td>CreateEmployee.feature:110</td>
+						</tr>
+    					<tr>
+    						<td>0.114</td>
+    						<td>CreateEmployee.feature:130</td>
+						</tr>
+    					<tr>
+    						<td>0.086</td>
+    						<td>DeleteEmp.feature:33</td>
+						</tr>
+    					<tr>
+    						<td>0.127</td>
+    						<td>DeleteEmp.feature:61</td>
+						</tr>
+    					<tr>
+    						<td>0.128</td>
+    						<td>EditEmp.feature:54</td>
+						</tr>
+    					<tr>
+    						<td>0.044</td>
+    						<td>EditEmp.feature:80</td>
+						</tr>
+    				<tr><td rowspan="5">I wait 10 ms for element having css ".ng-pristine.ng-invalid.ng-invalid-required" to display</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.084</td>
+    						<td>CreateEmployee.feature:42</td>
+						</tr>
+    					<tr>
+    						<td>0.091</td>
+    						<td>CreateEmployee.feature:60</td>
+						</tr>
+    					<tr>
+    						<td>0.075</td>
+    						<td>CreateEmployee.feature:78</td>
+						</tr>
+    					<tr>
+    						<td>0.093</td>
+    						<td>CreateEmployee.feature:96</td>
+						</tr>
+    				<tr><td rowspan="2">I wait 5 ms for element having repeater "employee in employees" to display</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.081</td>
+    						<td>Login.feature:26</td>
+						</tr>
+    				<tr><td rowspan="4">I wait 5 ms for element having css ".error-message.ng-binding" to display</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.029</td>
+    						<td>Login.feature:37</td>
+						</tr>
+    					<tr>
+    						<td>0.054</td>
+    						<td>Login.feature:37</td>
+						</tr>
+    					<tr>
+    						<td>0.076</td>
+    						<td>Login.feature:37</td>
+						</tr>
+    				<tr><td rowspan="4">I wait 5 ms for element having css ".ng-pristine.ng-invalid.ng-invalid-required" to display</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.08</td>
+    						<td>Login.feature:52</td>
+						</tr>
+    					<tr>
+    						<td>0.036</td>
+    						<td>Login.feature:61</td>
+						</tr>
+    					<tr>
+    						<td>0.038</td>
+    						<td>Login.feature:70</td>
+						</tr>
+    				<tr><td rowspan="2">I wait 5 ms for element having xpath "//p[contains(text(),'Logout')]" to display</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.083</td>
+    						<td>Logout.feature:9</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,131.429
+	        	80,131.429
+	        	80,240 
+	        	80,240
+	        	80,158.571
+	        	120,158.571
+	        	120,240 
+	        	120,240
+	        	120,212.857
+	        	160,212.857
+	        	160,240 
+	        	160,240
+	        	160,50
+	        	200,50
+	        	200,240 
+	        	200,240
+	        	200,158.571
+	        	240,158.571
+	        	240,240 
+	        	240,240
+	        	240,212.857
+	        	280,212.857
+	        	280,240 
+	        	280,240
+	        	280,158.571
+	        	320,158.571
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="53"
+				 	y="130" font-weight="bold" font-size="14">4</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.03
+        	</text>
+				<text x="93"
+				 	y="157" font-weight="bold" font-size="14">3</text>
+            <line x1="80" y1="240"
+            	  x2="80" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="82" y="248" font-size="8">
+            	0.04
+        	</text>
+				<text x="133"
+				 	y="211" font-weight="bold" font-size="14">1</text>
+            <line x1="120" y1="240"
+            	  x2="120" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="122" y="248" font-size="8">
+            	0.06
+        	</text>
+				<text x="173"
+				 	y="49" font-weight="bold" font-size="14">7</text>
+            <line x1="160" y1="240"
+            	  x2="160" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="162" y="248" font-size="8">
+            	0.07
+        	</text>
+				<text x="213"
+				 	y="157" font-weight="bold" font-size="14">3</text>
+            <line x1="200" y1="240"
+            	  x2="200" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="202" y="248" font-size="8">
+            	0.09
+        	</text>
+				<text x="253"
+				 	y="211" font-weight="bold" font-size="14">1</text>
+            <line x1="240" y1="240"
+            	  x2="240" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="242" y="248" font-size="8">
+            	0.1
+        	</text>
+				<text x="293"
+				 	y="157" font-weight="bold" font-size="14">3</text>
+            <line x1="280" y1="240"
+            	  x2="280" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="282" y="248" font-size="8">
+            	0.11
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.08s</td></tr>
+		                <tr><th>Median</th><td>0.08s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>0.15</td></tr>
+		                <tr><th>Minimum</th><td>0.03s</td></tr>
+		                <tr><th>Maximum</th><td>0.13s</td></tr>
+		                <tr><th>Total</th><td>1.66s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20wait_20(_5Cd_2B)_20ms_20for_20element_20having_20(._2B)_20_22(.*_3F)_22_20to_20be_20enabled_24">^I wait (\d+) ms for element having (.+) "(.*?)" to be enabled$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I wait 10 ms for element having id "bAdd" to be enabled</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.119</td>
+    						<td>CreateEmployee.feature:9</td>
+						</tr>
+    				<tr><td rowspan="2">I wait 20 ms for element having id "bAdd" to be enabled</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.042</td>
+    						<td>CreateEmployee.feature:19</td>
+						</tr>
+    				<tr><td rowspan="13">I wait 15 ms for element having id "bAdd" to be enabled</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.042</td>
+    						<td>CreateEmployee.feature:35</td>
+						</tr>
+    					<tr>
+    						<td>0.06</td>
+    						<td>CreateEmployee.feature:53</td>
+						</tr>
+    					<tr>
+    						<td>0.056</td>
+    						<td>CreateEmployee.feature:71</td>
+						</tr>
+    					<tr>
+    						<td>0.035</td>
+    						<td>CreateEmployee.feature:89</td>
+						</tr>
+    					<tr>
+    						<td>0.087</td>
+    						<td>CreateEmployee.feature:108</td>
+						</tr>
+    					<tr>
+    						<td>0.038</td>
+    						<td>CreateEmployee.feature:128</td>
+						</tr>
+    					<tr>
+    						<td>0.031</td>
+    						<td>CreateEmployee.feature:148</td>
+						</tr>
+    					<tr>
+    						<td>0.104</td>
+    						<td>CreateEmployee.feature:148</td>
+						</tr>
+    					<tr>
+    						<td>0.038</td>
+    						<td>DeleteEmp.feature:31</td>
+						</tr>
+    					<tr>
+    						<td>0.039</td>
+    						<td>DeleteEmp.feature:59</td>
+						</tr>
+    					<tr>
+    						<td>0.04</td>
+    						<td>EditEmp.feature:52</td>
+						</tr>
+    					<tr>
+    						<td>0.036</td>
+    						<td>EditEmp.feature:78</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,50
+	        	110,50
+	        	110,240 
+	        	110,240
+	        	110,197.778
+	        	180,197.778
+	        	180,240 
+	        	180,240
+	        	180,218.889
+	        	250,218.889
+	        	250,240 
+	        	250,240
+	        	250,197.778
+	        	320,197.778
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="68"
+				 	y="49" font-weight="bold" font-size="14">9</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.03
+        	</text>
+				<text x="138"
+				 	y="196" font-weight="bold" font-size="14">2</text>
+            <line x1="110" y1="240"
+            	  x2="110" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="112" y="248" font-size="8">
+            	0.05
+        	</text>
+				<text x="208"
+				 	y="217" font-weight="bold" font-size="14">1</text>
+            <line x1="180" y1="240"
+            	  x2="180" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="182" y="248" font-size="8">
+            	0.08
+        	</text>
+				<text x="278"
+				 	y="196" font-weight="bold" font-size="14">2</text>
+            <line x1="250" y1="240"
+            	  x2="250" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="252" y="248" font-size="8">
+            	0.1
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.05s</td></tr>
+		                <tr><th>Median</th><td>0.04s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>1.33</td></tr>
+		                <tr><th>Minimum</th><td>0.03s</td></tr>
+		                <tr><th>Maximum</th><td>0.12s</td></tr>
+		                <tr><th>Total</th><td>0.77s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20assert_20element_20having_20(._2B)_20_22(.*_3F)_22_20and_20has_20class_20_22(.*_3F)_22_20should_5Cs*((_3F_3Anot)_3F)_5Cs_2Bbe_20present_24">^I assert element having (.+) "(.*?)" and has class "(.*?)" should\s*((?:not)?)\s+be present$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I assert element having id "bDelete" and has class "disabled" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.014</td>
+    						<td>DeleteEmp.feature:10</td>
+						</tr>
+    				<tr><td rowspan="2">I assert element having id "bEdit" and has class "disabled" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.014</td>
+    						<td>EditEmp.feature:11</td>
+						</tr>
+    				<tr><td rowspan="2">I assert element having model "selectedEmployee.firstName" and has class "ng-valid-required" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.038</td>
+    						<td>EditEmp.feature:34</td>
+						</tr>
+    				<tr><td rowspan="2">I assert element having model "selectedEmployee.lastName" and has class "ng-valid-required" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.031</td>
+    						<td>EditEmp.feature:35</td>
+						</tr>
+    				<tr><td rowspan="2">I assert element having model "selectedEmployee.startDate" and has class "ng-valid-required" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.032</td>
+    						<td>EditEmp.feature:36</td>
+						</tr>
+    				<tr><td rowspan="2">I assert element having model "selectedEmployee.email" and has class "ng-valid-required" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.035</td>
+    						<td>EditEmp.feature:37</td>
+						</tr>
+    				<tr><td rowspan="2">I assert element having model "selectedEmployee.startDate" and has class "ng-valid-pattern" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.027</td>
+    						<td>EditEmp.feature:109</td>
+						</tr>
+    				<tr><td rowspan="2">I assert element having model "selectedEmployee.startDate" and has class "ng-invalid-pattern" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.025</td>
+    						<td>EditEmp.feature:124</td>
+						</tr>
+    				<tr><td rowspan="2">I assert element having model "selectedEmployee.email" and has class "ng-valid-email" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.025</td>
+    						<td>EditEmp.feature:139</td>
+						</tr>
+    				<tr><td rowspan="2">I assert element having model "selectedEmployee.email" and has class "ng-invalid-email" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.024</td>
+    						<td>EditEmp.feature:154</td>
+						</tr>
+    				<tr><td rowspan="2">I assert element having model "user.name" and has class "ng-invalid-required" should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.061</td>
+    						<td>Logout.feature:20</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,50
+	        	133.333,50
+	        	133.333,240 
+	        	133.333,240
+	        	133.333,113.333
+	        	226.667,113.333
+	        	226.667,240 
+	        	226.667,240
+	        	226.667,208.333
+	        	320,208.333
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="79.667"
+				 	y="48" font-weight="bold" font-size="14">6</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.01
+        	</text>
+				<text x="173"
+				 	y="112" font-weight="bold" font-size="14">4</text>
+            <line x1="133.333" y1="240"
+            	  x2="133.333" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="135.333" y="248" font-size="8">
+            	0.03
+        	</text>
+				<text x="266.333"
+				 	y="207" font-weight="bold" font-size="14">1</text>
+            <line x1="226.667" y1="240"
+            	  x2="226.667" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="228.667" y="248" font-size="8">
+            	0.05
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.03s</td></tr>
+		                <tr><th>Median</th><td>0.03s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>1.17</td></tr>
+		                <tr><th>Minimum</th><td>0.01s</td></tr>
+		                <tr><th>Maximum</th><td>0.06s</td></tr>
+		                <tr><th>Total</th><td>0.33s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5Eelement_20having_20(._2B)_22(_5B_5E_22_5D*)_22_20from_20_22(_5B_5E_22_5D*)_22_20_20should_5Cs*((_3F_3Anot)_3F)_5Cs_2Bbe_20present_24">^element having (.+)"([^"]*)" from "([^"]*)"  should\s*((?:not)?)\s+be present$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">element having model"firstname" from "CreateEmp1"  should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.056</td>
+    						<td>CreateEmployee.feature:21</td>
+						</tr>
+    				<tr><td rowspan="2">element having model"lastname" from "CreateEmp1"  should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.049</td>
+    						<td>CreateEmployee.feature:22</td>
+						</tr>
+    				<tr><td rowspan="2">element having model"startdate" from "CreateEmp1"  should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.039</td>
+    						<td>CreateEmployee.feature:23</td>
+						</tr>
+    				<tr><td rowspan="2">element having model"email" from "CreateEmp1"  should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.046</td>
+    						<td>CreateEmployee.feature:24</td>
+						</tr>
+    				<tr><td rowspan="2">element having xpath"repeater_path" from "Testdata8"  should not be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>30.425</td>
+    						<td>DeleteEmp.feature:47</td>
+						</tr>
+    				<tr><td rowspan="2">element having xpath"repeater_path" from "Testdata9"  should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.05</td>
+    						<td>DeleteEmp.feature:76</td>
+						</tr>
+    				<tr><td rowspan="2">element having buttonText"update" from "Testdata1"  should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.051</td>
+    						<td>EditEmp.feature:38</td>
+						</tr>
+    				<tr><td rowspan="2">element having xpath"deletebutton" from "Testdata1"  should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.045</td>
+    						<td>EditEmp.feature:40</td>
+						</tr>
+    				<tr><td rowspan="2">element having xpath"username" from "Login1"  should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.134</td>
+    						<td>Login.feature:6</td>
+						</tr>
+    				<tr><td rowspan="2">element having xpath"password" from "Login1"  should be present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.066</td>
+    						<td>Login.feature:7</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,50
+	        	133.333,50
+	        	133.333,240 
+	        	133.333,240
+	        	133.333,240
+	        	226.667,240
+	        	226.667,240 
+	        	226.667,240
+	        	226.667,218.889
+	        	320,218.889
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="79.667"
+				 	y="49" font-weight="bold" font-size="14">9</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.04
+        	</text>
+            <line x1="133.333" y1="240"
+            	  x2="133.333" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="135.333" y="248" font-size="8">
+            	10.17
+        	</text>
+				<text x="266.333"
+				 	y="217" font-weight="bold" font-size="14">1</text>
+            <line x1="226.667" y1="240"
+            	  x2="226.667" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="228.667" y="248" font-size="8">
+            	20.3
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>3.1s</td></tr>
+		                <tr><th>Median</th><td>0.05s</td></tr>
+		                <tr><th>Variance</th><td>82.99</td></tr>
+		                <tr><th>Skewness</th><td>2.67</td></tr>
+		                <tr><th>Minimum</th><td>0.04s</td></tr>
+		                <tr><th>Maximum</th><td>30.42s</td></tr>
+		                <tr><th>Total</th><td>30.96s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20click_20on_20repeater_20element_20having_20repeater_20_22(.*_3F)_22_24">^I click on repeater element having repeater "(.*?)"$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="10">I click on repeater element having repeater "employee in employees"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.257</td>
+    						<td>CreateEmployee.feature:149</td>
+						</tr>
+    					<tr>
+    						<td>0.354</td>
+    						<td>CreateEmployee.feature:149</td>
+						</tr>
+    					<tr>
+    						<td>0.29</td>
+    						<td>DeleteEmp.feature:20</td>
+						</tr>
+    					<tr>
+    						<td>0.357</td>
+    						<td>EditEmp.feature:21</td>
+						</tr>
+    					<tr>
+    						<td>0.303</td>
+    						<td>EditEmp.feature:32</td>
+						</tr>
+    					<tr>
+    						<td>0.264</td>
+    						<td>EditEmp.feature:105</td>
+						</tr>
+    					<tr>
+    						<td>0.351</td>
+    						<td>EditEmp.feature:120</td>
+						</tr>
+    					<tr>
+    						<td>0.362</td>
+    						<td>EditEmp.feature:135</td>
+						</tr>
+    					<tr>
+    						<td>0.269</td>
+    						<td>EditEmp.feature:150</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,50
+	        	133.333,50
+	        	133.333,240 
+	        	133.333,240
+	        	133.333,192.5
+	        	226.667,192.5
+	        	226.667,240 
+	        	226.667,240
+	        	226.667,50
+	        	320,50
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="79.667"
+				 	y="48" font-weight="bold" font-size="14">4</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.26
+        	</text>
+				<text x="173"
+				 	y="191" font-weight="bold" font-size="14">1</text>
+            <line x1="133.333" y1="240"
+            	  x2="133.333" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="135.333" y="248" font-size="8">
+            	0.29
+        	</text>
+				<text x="266.333"
+				 	y="48" font-weight="bold" font-size="14">4</text>
+            <line x1="226.667" y1="240"
+            	  x2="226.667" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="228.667" y="248" font-size="8">
+            	0.33
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.31s</td></tr>
+		                <tr><th>Median</th><td>0.3s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>-0.02</td></tr>
+		                <tr><th>Minimum</th><td>0.26s</td></tr>
+		                <tr><th>Maximum</th><td>0.36s</td></tr>
+		                <tr><th>Total</th><td>2.81s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20take_20screenshot_24">^I take screenshot$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="8">I take screenshot</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.308</td>
+    						<td>DeleteEmp.feature:9</td>
+						</tr>
+    					<tr>
+    						<td>0.156</td>
+    						<td>DeleteEmp.feature:42</td>
+						</tr>
+    					<tr>
+    						<td>0.155</td>
+    						<td>DeleteEmp.feature:44</td>
+						</tr>
+    					<tr>
+    						<td>0.152</td>
+    						<td>DeleteEmp.feature:70</td>
+						</tr>
+    					<tr>
+    						<td>0.29</td>
+    						<td>DeleteEmp.feature:72</td>
+						</tr>
+    					<tr>
+    						<td>0.193</td>
+    						<td>EditEmp.feature:10</td>
+						</tr>
+    					<tr>
+    						<td>0.379</td>
+    						<td>EditEmp.feature:89</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,50
+	        	180,50
+	        	180,240 
+	        	180,240
+	        	180,97.5
+	        	320,97.5
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="103"
+				 	y="48" font-weight="bold" font-size="14">4</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.15
+        	</text>
+				<text x="243"
+				 	y="96" font-weight="bold" font-size="14">3</text>
+            <line x1="180" y1="240"
+            	  x2="180" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="182" y="248" font-size="8">
+            	0.27
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.23s</td></tr>
+		                <tr><th>Median</th><td>0.19s</td></tr>
+		                <tr><th>Variance</th><td>0.01</td></tr>
+		                <tr><th>Skewness</th><td>0.5</td></tr>
+		                <tr><th>Minimum</th><td>0.15s</td></tr>
+		                <tr><th>Maximum</th><td>0.38s</td></tr>
+		                <tr><th>Total</th><td>1.63s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20scroll_20to_20bottom_20of_20page_24">^I scroll to bottom of page$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="7">I scroll to bottom of page</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.006</td>
+    						<td>DeleteEmp.feature:39</td>
+						</tr>
+    					<tr>
+    						<td>0.008</td>
+    						<td>DeleteEmp.feature:67</td>
+						</tr>
+    					<tr>
+    						<td>0.015</td>
+    						<td>DeleteEmp.feature:75</td>
+						</tr>
+    					<tr>
+    						<td>0.005</td>
+    						<td>EditEmp.feature:60</td>
+						</tr>
+    					<tr>
+    						<td>0.004</td>
+    						<td>EditEmp.feature:86</td>
+						</tr>
+    					<tr>
+    						<td>0.005</td>
+    						<td>EditEmp.feature:93</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,50
+	        	180,50
+	        	180,240 
+	        	180,240
+	        	180,202
+	        	320,202
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="103"
+				 	y="48" font-weight="bold" font-size="14">5</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0
+        	</text>
+				<text x="243"
+				 	y="200" font-weight="bold" font-size="14">1</text>
+            <line x1="180" y1="240"
+            	  x2="180" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="182" y="248" font-size="8">
+            	0.01
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.01s</td></tr>
+		                <tr><th>Median</th><td>0.01s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>1.36</td></tr>
+		                <tr><th>Minimum</th><td>0s</td></tr>
+		                <tr><th>Maximum</th><td>0.01s</td></tr>
+		                <tr><th>Total</th><td>0.04s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5Eelement_20having_20(._2B)_20_22(_5B_5E_22_5D*)_22_20should_5Cs*((_3F_3Anot)_3F)_5Cs_2Bbe_20(enabled_7Cdisabled)_24">^element having (.+) "([^"]*)" should\s*((?:not)?)\s+be (enabled|disabled)$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="3">element having id "bEdit" should be enabled</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.033</td>
+    						<td>CreateEmployee.feature:150</td>
+						</tr>
+    					<tr>
+    						<td>0.048</td>
+    						<td>EditEmp.feature:22</td>
+						</tr>
+    				<tr><td rowspan="3">element having id "bDelete" should be enabled</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.036</td>
+    						<td>CreateEmployee.feature:150</td>
+						</tr>
+    					<tr>
+    						<td>0.045</td>
+    						<td>DeleteEmp.feature:21</td>
+						</tr>
+    				<tr><td rowspan="2">element having buttonText "Update" should be enabled</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.022</td>
+    						<td>EditEmp.feature:39</td>
+						</tr>
+    				<tr><td rowspan="2">element having xpath "//p[contains(text(),'Delete')]" should be enabled</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.029</td>
+    						<td>EditEmp.feature:41</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,50
+	        	180,50
+	        	180,240 
+	        	180,240
+	        	180,50
+	        	320,50
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="103"
+				 	y="49" font-weight="bold" font-size="14">3</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.02
+        	</text>
+				<text x="243"
+				 	y="49" font-weight="bold" font-size="14">3</text>
+            <line x1="180" y1="240"
+            	  x2="180" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="182" y="248" font-size="8">
+            	0.03
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.04s</td></tr>
+		                <tr><th>Median</th><td>0.04s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>0.01</td></tr>
+		                <tr><th>Minimum</th><td>0.02s</td></tr>
+		                <tr><th>Maximum</th><td>0.05s</td></tr>
+		                <tr><th>Total</th><td>0.21s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20clear_20input_20field_20having_20(._2B)_20_22(_5B_5E_22_5D*)_22_24">^I clear input field having (.+) "([^"]*)"$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I clear input field having model "selectedEmployee.firstName"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.138</td>
+    						<td>EditEmp.feature:63</td>
+						</tr>
+    				<tr><td rowspan="2">I clear input field having model "selectedEmployee.lastName"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.02</td>
+    						<td>EditEmp.feature:90</td>
+						</tr>
+    				<tr><td rowspan="3">I clear input field having model "selectedEmployee.startDate"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.137</td>
+    						<td>EditEmp.feature:107</td>
+						</tr>
+    					<tr>
+    						<td>0.128</td>
+    						<td>EditEmp.feature:122</td>
+						</tr>
+    				<tr><td rowspan="3">I clear input field having model "selectedEmployee.email"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.121</td>
+    						<td>EditEmp.feature:137</td>
+						</tr>
+    					<tr>
+    						<td>0.096</td>
+    						<td>EditEmp.feature:152</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient>
+		<linearGradient id="grad3" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:green;stop-opacity:0.7" />
+		<stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" />
+		<stop offset="100%" style="stop-color:red;stop-opacity:0.7" />
+		</linearGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<!--<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.6s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">11.6s</text>-->
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+		
+
+		<polygon
+			points="
+	        	40,240
+	        	40,202
+	        	180,202
+	        	180,240 
+	        	180,240
+	        	180,50
+	        	320,50
+	        	320,240 
+			"
+			style="stroke:black;stroke-width:1" fill="url(#grad3)" />
+				<text x="103"
+				 	y="200" font-weight="bold" font-size="14">1</text>
+            <line x1="40" y1="240"
+            	  x2="40" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="42" y="248" font-size="8">
+            	0.02
+        	</text>
+				<text x="243"
+				 	y="48" font-weight="bold" font-size="14">5</text>
+            <line x1="180" y1="240"
+            	  x2="180" y2="242" style="stroke:black;stroke-width:1" />
+            <text x="182" y="248" font-size="8">
+            	0.08
+        	</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.11s</td></tr>
+		                <tr><th>Median</th><td>0.13s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>-1.38</td></tr>
+		                <tr><th>Minimum</th><td>0.02s</td></tr>
+		                <tr><th>Maximum</th><td>0.14s</td></tr>
+		                <tr><th>Total</th><td>0.64s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20assert_20repeater_20element_20having_20_22(_5B_5E_22_5D*)_22_20should_20have_20_22(_5B_5E_22_5D*)_22_20from_20_22(_5B_5E_22_5D*)_22_20have_20text_20present_24">^I assert repeater element having "([^"]*)" should have "([^"]*)" from "([^"]*)" have text present$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I assert repeater element having "employee in employees" should have "emp_full_name" from "CreateEmp2" have text present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>1.003</td>
+    						<td>CreateEmployee.feature:136</td>
+						</tr>
+    				<tr><td rowspan="2">I assert repeater element having "employee in employees" should have "emp_full_name" from "Testdata8" have text present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>1.189</td>
+    						<td>DeleteEmp.feature:40</td>
+						</tr>
+    				<tr><td rowspan="2">I assert repeater element having "employee in employees" should have "emp_full_name" from "Testdata9" have text present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>1.027</td>
+    						<td>DeleteEmp.feature:68</td>
+						</tr>
+    				<tr><td rowspan="2">I assert repeater element having "employee in employees" should have "new_emp_name" from "Testdata8" have text present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.846</td>
+    						<td>EditEmp.feature:66</td>
+						</tr>
+    				<tr><td rowspan="2">I assert repeater element having "employee in employees" should have "new_emp_name" from "Testdata9" have text present</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.936</td>
+    						<td>EditEmp.feature:94</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>1s</td></tr>
+		                <tr><th>Median</th><td>1s</td></tr>
+		                <tr><th>Variance</th><td>0.01</td></tr>
+		                <tr><th>Skewness</th><td>0.38</td></tr>
+		                <tr><th>Minimum</th><td>0.85s</td></tr>
+		                <tr><th>Maximum</th><td>1.19s</td></tr>
+		                <tr><th>Total</th><td>5s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20click_20on_20repeater_20element_20having_20text_20_22(_5B_5E_22_5D*)_22_20should_20have_20_22(_5B_5E_22_5D*)_22_20from_20_20_22(_5B_5E_22_5D*)_22_20to_20be_20clicked_24">^I click on repeater element having text "([^"]*)" should have "([^"]*)" from  "([^"]*)" to be clicked$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="3">I click on repeater element having text "employee in employees" should have "emp_full_name" from  "Testdata8" to be clicked</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>1.047</td>
+    						<td>DeleteEmp.feature:41</td>
+						</tr>
+    					<tr>
+    						<td>1.091</td>
+    						<td>EditEmp.feature:61</td>
+						</tr>
+    				<tr><td rowspan="3">I click on repeater element having text "employee in employees" should have "emp_full_name" from  "Testdata9" to be clicked</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.907</td>
+    						<td>DeleteEmp.feature:69</td>
+						</tr>
+    					<tr>
+    						<td>1.032</td>
+    						<td>EditEmp.feature:87</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>1.02s</td></tr>
+		                <tr><th>Median</th><td>1.05s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>-0.8</td></tr>
+		                <tr><th>Minimum</th><td>0.91s</td></tr>
+		                <tr><th>Maximum</th><td>1.09s</td></tr>
+		                <tr><th>Total</th><td>4.08s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20assert_20element_20having_20(._2B)_20_22(_5B_5E_22_5D*)_22_20should_5Cs*((_3F_3Anot)_3F)_5Cs_2Bhave_20text_20as_20_22(.*_3F)_22_24">^I assert element having (.+) "([^"]*)" should\s*((?:not)?)\s+have text as "(.*?)"$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="4">I assert element having css ".error-message.ng-binding" should have text as "Invalid username or password!"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.011</td>
+    						<td>Login.feature:38</td>
+						</tr>
+    					<tr>
+    						<td>0.013</td>
+    						<td>Login.feature:38</td>
+						</tr>
+    					<tr>
+    						<td>0.027</td>
+    						<td>Login.feature:38</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.02s</td></tr>
+		                <tr><th>Median</th><td>0.01s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>0.66</td></tr>
+		                <tr><th>Minimum</th><td>0.01s</td></tr>
+		                <tr><th>Maximum</th><td>0.03s</td></tr>
+		                <tr><th>Total</th><td>0.05s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20wait_20for_20(_5Cd_2B)_20sec_24">^I wait for (\d+) sec$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="3">I wait for 5 sec</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>5.009</td>
+    						<td>DeleteEmp.feature:46</td>
+						</tr>
+    					<tr>
+    						<td>5</td>
+    						<td>DeleteEmp.feature:74</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>5s</td></tr>
+		                <tr><th>Median</th><td>5.01s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>0</td></tr>
+		                <tr><th>Minimum</th><td>5s</td></tr>
+		                <tr><th>Maximum</th><td>5.01s</td></tr>
+		                <tr><th>Total</th><td>10.01s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5Eelement_20having_20(._2B)_20_22(_5B_5E_22_5D*)_22_20should_5Cs*((_3F_3Anot)_3F)_5Cs_2Bhave_20attribute_20_22(.*_3F)_22_20with_20value_20_22(.*_3F)_22_24">^element having (.+) "([^"]*)" should\s*((?:not)?)\s+have attribute "(.*?)" with value "(.*?)"$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">element having model "selectedEmployee.startDate" should have attribute "title" with value "Please enter a date formatting YYYY-MM-DD"</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.055</td>
+    						<td>CreateEmployee.feature:117</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.05s</td></tr>
+		                <tr><th>Median</th><td>0.05s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>0</td></tr>
+		                <tr><th>Minimum</th><td>0.05s</td></tr>
+		                <tr><th>Maximum</th><td>0.05s</td></tr>
+		                <tr><th>Total</th><td>0.05s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20accept_20alert_24">^I accept alert$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I accept alert</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>10.126</td>
+    						<td>CreateEmployee.feature:116</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>10.13s</td></tr>
+		                <tr><th>Median</th><td>10.13s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>0</td></tr>
+		                <tr><th>Minimum</th><td>10.13s</td></tr>
+		                <tr><th>Maximum</th><td>10.13s</td></tr>
+		                <tr><th>Total</th><td>10.13s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20assert_20message_20from_20alert_20should_20be_20_22(_5B_5E_22_5D*)_22_20and_20dismiss_20alert_24">^I assert message from alert should be "([^"]*)" and dismiss alert$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I assert message from alert should be "Are you sure you want to delete" and dismiss alert</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.008</td>
+    						<td>DeleteEmp.feature:73</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.01s</td></tr>
+		                <tr><th>Median</th><td>0.01s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>0</td></tr>
+		                <tr><th>Minimum</th><td>0.01s</td></tr>
+		                <tr><th>Maximum</th><td>0.01s</td></tr>
+		                <tr><th>Total</th><td>0.01s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+        	<h3><a id="_5EI_20assert_20message_20from_20alert_20should_20be_20_22(_5B_5E_22_5D*)_22_20and_20accept_20alert_24">^I assert message from alert should be "([^"]*)" and accept alert$</a></h3>
+        <p>
+        	<table>
+        		<tr>
+        			<th>Step Name</th>
+        			<th>Duration</th>
+        			<th>Location</th>
+    			</tr>
+    				<tr><td rowspan="2">I assert message from alert should be "Are you sure you want to delete" and accept alert</td><td colspan="2">&#160;</td></tr>
+    					<tr>
+    						<td>0.009</td>
+    						<td>DeleteEmp.feature:45</td>
+						</tr>
+            </table>
+        </p>
+        <p>
+        	<table class="none">
+        		<tr>
+        			<td class="none">
+<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg>
+    				</td>
+                    <td valign="top" class="none">
+                    	<p><table>
+                    	<tr><th colspan="2">Duration Characteristic</th></tr>
+		                <tr><th>Average</th><td>0.01s</td></tr>
+		                <tr><th>Median</th><td>0.01s</td></tr>
+		                <tr><th>Variance</th><td>0</td></tr>
+		                <tr><th>Skewness</th><td>0</td></tr>
+		                <tr><th>Minimum</th><td>0.01s</td></tr>
+		                <tr><th>Maximum</th><td>0.01s</td></tr>
+		                <tr><th>Total</th><td>0.01s</td></tr>
+		                </table>
+		                </p>
+                	</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+        	<a href="#top">To Overview Table</a>
+    	</p>
+
+    </body>
+</html>

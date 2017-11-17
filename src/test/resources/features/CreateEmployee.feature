@@ -2,7 +2,7 @@
 Feature: Create employee
 
   Scenario Outline: Check for create button is enabled in homepage
-    Given I am in app homepage
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having buttonText "Login"
@@ -12,7 +12,7 @@ Feature: Create employee
     |Testdata1       |
 
   Scenario Outline: Check for all fields appeared when create button is clicked
-    Given I am in app homepage
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having buttonText "Login"
@@ -27,8 +27,8 @@ Feature: Create employee
     |CreateEmp1|
 
 
-  Scenario Outline: check for validation error if first name is not entered and add button is clicked
-    Given I am in app homepage
+  Scenario Outline: Check for validation error if first name is not entered and add button is clicked
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having buttonText "Login"
@@ -45,8 +45,8 @@ Feature: Create employee
       |Dataset|lastname_type|lastname_value|startdate_type|startdate_value|email_type|email_value|blank_login_access_type|blank_login_access_value|
       |CreateEmp2|model          |selectedEmployee.lastName|model|selectedEmployee.startDate|model|selectedEmployee.email|css            |.ng-pristine.ng-invalid.ng-invalid-required|
 
-  Scenario Outline: check for validation error if last name is not entered and add button is clicked
-    Given I am in app homepage
+  Scenario Outline: Check for validation error if last name is not entered and add button is clicked
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having buttonText "Login"
@@ -63,8 +63,8 @@ Feature: Create employee
       |Dataset|firstname_type|firstname_value|startdate_type|startdate_value|email_type|email_value|blank_login_access_type|blank_login_access_value|
       |CreateEmp2|model          |selectedEmployee.firstName|model|selectedEmployee.startDate|model|selectedEmployee.email|css            |.ng-pristine.ng-invalid.ng-invalid-required|
 
-  Scenario Outline: check for validation error if start date is not entered and add button is clicked
-    Given I am in app homepage
+  Scenario Outline: Check for validation error if start date is not entered and add button is clicked
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having buttonText "Login"
@@ -81,8 +81,8 @@ Feature: Create employee
       |Dataset|firstname_type|firstname_value|lastname_type|lastname_value|email_type|email_value|blank_login_access_type|blank_login_access_value|
       |CreateEmp2|model          |selectedEmployee.firstName|model|selectedEmployee.lastName|model|selectedEmployee.email|css            |.ng-pristine.ng-invalid.ng-invalid-required|
 
-  Scenario Outline: check for validation error if email is not entered and add button is clicked
-    Given I am in app homepage
+  Scenario Outline: Check for validation error if email is not entered and add button is clicked
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having buttonText "Login"
@@ -100,8 +100,8 @@ Feature: Create employee
       |CreateEmp2|model          |selectedEmployee.firstName|model|selectedEmployee.lastName|model|selectedEmployee.startDate|css            |.ng-pristine.ng-invalid.ng-invalid-required|
 
 
-  Scenario Outline: check for validation error if startdate entered is invalid and add button is clicked
-    Given I am in app homepage
+  Scenario Outline: Check for validation error if startdate entered is invalid and add button is clicked
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having buttonText "Login"
@@ -120,8 +120,8 @@ Feature: Create employee
       |Dataset|firstname_type|firstname_value|lastname_type|lastname_value|startdate_type|startdate_value|email_type|email_value|value|
       |CreateEmp2|model          |selectedEmployee.firstName|model|selectedEmployee.lastName|model |selectedEmployee.startDate|model|selectedEmployee.email|Please enter a date formatting YYYY-MM-DD           |
 
-  Scenario Outline: check the success of create operation when all fields are filled correctly and newly added employee is listed in home page
-    Given I am in app homepage
+  Scenario Outline: Check the success of create operation when all fields are filled correctly and newly added employee is listed in home page
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having buttonText "Login"
@@ -141,7 +141,7 @@ Feature: Create employee
       |CreateEmp2|model          |selectedEmployee.firstName|model|selectedEmployee.lastName|model |selectedEmployee.startDate|model|selectedEmployee.email|
 
   Scenario Outline: Check edit and delete button get enabled when employee from the list is selected
-    Given I am in app homepage
+    Given I am in app loginpage
     And I enter "<Dataset>" into "username"input field having model "user.name"
     And I enter "<Dataset>" into "password"input field having model "user.password"
     When I click on element having buttonText "Login"

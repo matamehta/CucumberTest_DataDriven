@@ -1,0 +1,613 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Results Overview Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Results Overview Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+  <h1>Overview Chart</h1>
+	<table class="chart">
+	<tr>
+	<th class="chart">Features Status</th><th class="chart">Scenario Status</th>
+	</tr>
+	<tr class="chart">
+    <td class="chart">
+<div id="feature_status" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <img src="temp1510881307893/0.png"></img>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+    <td class="chart">
+<div id="scenario_status" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <img src="temp1510881307893/1.png"></img>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+	</tr>
+	</table>
+
+<h1>Summary</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">3</td>
+		<td class="failed" id="features_failed">2</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">5</td>
+		<td id="features_rate">
+				60%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">32</td>
+		<td class="failed" id="scenarios_failed">2</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">34</td>
+		<td id="scenarios_rate">
+				94%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">313</td>
+		<td class="failed" id="steps_failed">2</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">2</td>
+		<td id="steps_total">317</td>
+		<td id="steps_rate">
+				99%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 06m 20s</b></div>
+	
+<h1>Features Status</h1>
+	
+<table>
+	<tr>
+		<th>Feature Name</th>
+		<th>Status</th>
+		<th>Passed</th>
+		<th>Failed</th>
+		<th>Known</th>
+		<th>Undefined</th>
+		<th>Total</th>
+		<th>Duration</th>
+	</tr>
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>passed</td>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>10</td>
+		<td>102.37s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Delete employee</td>
+		<td>passed</td>
+		<td>4</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>4</td>
+		<td>81.54s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>passed</td>
+		<td>9</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>9</td>
+		<td>89.38s</td>
+	</tr>	
+	<tr class="failed">
+		<td>user login</td>
+		<td>failed</td>
+		<td>8</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>9</td>
+		<td>61.69s</td>
+	</tr>	
+	<tr class="failed">
+		<td>Logout user</td>
+		<td>failed</td>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>2</td>
+		<td>45.59s</td>
+	</tr>	
+
+</table>
+	
+<h1>Scenario Status</h1>
+
+<table>
+	<tr>
+		<th>Feature Name</th>
+		<th>Scenario</th>
+		<th>Status</th>
+		<th>Passed</th>
+		<th>Failed</th>
+		<th>Known</th>
+		<th>Undefined</th>
+		<th>Total</th>
+		<th>Retries</th>
+		<th>Duration</th>
+	</tr>
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for create button is enabled in homepage</td>
+		<td>passed</td>
+		<td>5</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>5</td>
+		<td>0</td>
+		<td>9.44s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for all fields appeared when create button is clicked</td>
+		<td>passed</td>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>10</td>
+		<td>0</td>
+		<td>8.46s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for validation error if first name is not entered and add button is clicked</td>
+		<td>passed</td>
+		<td>12</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>12</td>
+		<td>0</td>
+		<td>9.53s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for validation error if last name is not entered and add button is clicked</td>
+		<td>passed</td>
+		<td>12</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>12</td>
+		<td>0</td>
+		<td>8.84s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for validation error if start date is not entered and add button is clicked</td>
+		<td>passed</td>
+		<td>12</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>12</td>
+		<td>0</td>
+		<td>9.39s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for validation error if email is not entered and add button is clicked</td>
+		<td>passed</td>
+		<td>12</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>12</td>
+		<td>0</td>
+		<td>9.29s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check for validation error if startdate entered is invalid and add button is clicked</td>
+		<td>passed</td>
+		<td>14</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>14</td>
+		<td>0</td>
+		<td>19.70s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check the success of create operation when all fields are filled correctly and newly added employee is listed in home page</td>
+		<td>passed</td>
+		<td>13</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>13</td>
+		<td>0</td>
+		<td>11.67s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check edit and delete button get enabled when employee from the list is selected</td>
+		<td>passed</td>
+		<td>7</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>7</td>
+		<td>0</td>
+		<td>8.05s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Create employee</td>
+		<td>Check edit and delete button get enabled when employee from the list is selected</td>
+		<td>passed</td>
+		<td>7</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>7</td>
+		<td>0</td>
+		<td>8.00s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Delete employee</td>
+		<td>Check for delete button is disabled in home page</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>8.16s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Delete employee</td>
+		<td>Check for delete button gets enabled when employee from list is selected in home page</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>8.32s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Delete employee</td>
+		<td>Check for validation alert pop if existing employee is selected to delete  ,employee gets deleted from loginpage if alert is accepted</td>
+		<td>passed</td>
+		<td>21</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>21</td>
+		<td>0</td>
+		<td>47.67s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Delete employee</td>
+		<td>Check for validation alert pop if existing employee is selected to delete  ,employee not deleted from loginpage if alert is dismiss</td>
+		<td>passed</td>
+		<td>22</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>22</td>
+		<td>0</td>
+		<td>17.39s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for edit button is disabled in home page</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>7.62s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for edit button gets enabled when employee from list is selected in home page</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>8.75s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for all field in a employee form have vaild data when edit button is clicked</td>
+		<td>passed</td>
+		<td>14</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>14</td>
+		<td>0</td>
+		<td>8.95s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for first name field is editable and updated correctly</td>
+		<td>passed</td>
+		<td>19</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>19</td>
+		<td>0</td>
+		<td>13.75s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for lastname field is editable and updated correctly</td>
+		<td>passed</td>
+		<td>21</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>21</td>
+		<td>0</td>
+		<td>12.98s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for employee startdate get updated successfully if new startdate is valid</td>
+		<td>passed</td>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>10</td>
+		<td>0</td>
+		<td>10.64s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for validation error if new start date is invalid</td>
+		<td>passed</td>
+		<td>9</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>9</td>
+		<td>0</td>
+		<td>8.30s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for employee email details get updated successfully if new email is valid</td>
+		<td>passed</td>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>10</td>
+		<td>0</td>
+		<td>9.72s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Edit employee</td>
+		<td>Check for validation failure if employee email details are incorrect during update</td>
+		<td>passed</td>
+		<td>10</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>10</td>
+		<td>0</td>
+		<td>8.67s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check all mandatory field in login page is marked with asterix  *</td>
+		<td>passed</td>
+		<td>3</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>3</td>
+		<td>0</td>
+		<td>6.21s</td>
+	</tr>	
+	<tr class="failed">
+		<td>user login</td>
+		<td>Check for text field username and password appeared in login page, Check submit button "Login" exist</td>
+		<td>failed</td>
+		<td>1</td>
+		<td>1</td>
+		<td>0</td>
+		<td>2</td>
+		<td>4</td>
+		<td>0</td>
+		<td>6.09s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for successful login using valid credentials and verify repeater element to show "employee list" appeared in home page</td>
+		<td>passed</td>
+		<td>5</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>5</td>
+		<td>0</td>
+		<td>7.79s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if either or both username and password is incorrect and Login button is clicked</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>6.30s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if either or both username and password is incorrect and Login button is clicked</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>7.64s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if either or both username and password is incorrect and Login button is clicked</td>
+		<td>passed</td>
+		<td>6</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>6</td>
+		<td>0</td>
+		<td>7.36s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if username field blank and Login button is clicked</td>
+		<td>passed</td>
+		<td>4</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>4</td>
+		<td>0</td>
+		<td>6.91s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if password field blank and Login button is clicked</td>
+		<td>passed</td>
+		<td>4</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>4</td>
+		<td>0</td>
+		<td>6.68s</td>
+	</tr>	
+	<tr class="passed">
+		<td>user login</td>
+		<td>Check for validation error if both username and password are blank and Login button is clicked</td>
+		<td>passed</td>
+		<td>3</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>3</td>
+		<td>0</td>
+		<td>6.72s</td>
+	</tr>	
+	<tr class="passed">
+		<td>Logout user</td>
+		<td>Check for logout button appeared once user is logged on</td>
+		<td>passed</td>
+		<td>5</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+		<td>5</td>
+		<td>0</td>
+		<td>7.55s</td>
+	</tr>	
+	<tr class="failed">
+		<td>Logout user</td>
+		<td>Check for logout button return back to user login page and username/password is blank</td>
+		<td>failed</td>
+		<td>6</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>7</td>
+		<td>0</td>
+		<td>38.05s</td>
+	</tr>	
+</table>	
+	</body>
+</html>
