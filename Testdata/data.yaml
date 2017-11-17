@@ -1,0 +1,106 @@
+App:
+    url: "http://cafetownsend-angular-rails.herokuapp.com"
+Login1:
+    username: //*[contains(text(),"Username*")]
+    password: //*[contains(text(),"Password*")]
+
+Login2:
+    username: user.name
+    password: user.password
+    login: Login
+
+Testdata1:
+     username: Luke
+     password: Skywalker
+     update: Update
+     deletebutton: .//p[contains(text(),'Delete')]
+
+Testdata2:
+     username: tomsmith
+     password: Skywalkwer
+
+Testdata3:
+     username: Luke
+     password: Skywalkwercycle
+
+Testdata4:
+     username: Lukera
+     password: Skywalkwercycle
+
+Testdata5:
+     username:
+     password:
+
+Testdata6:
+     username:
+     password: Skywalker
+
+Testdata7:
+     username: Luke
+     password:
+
+Testdata8:
+     username: Luke
+     password: Skywalker
+     firstname: Maria
+     lastname: Rolando
+     startdate: 2017-12-12
+     email: mary.ronaldo@gmail.com
+     firstname_newname: Hary
+     emp_full_name: Maria Rolando
+     new_emp_name: Hary Rolando
+     repeater_path: .//*[@id='employee-list']/li[contains(text(),'Maria Rolando')])
+
+
+Testdata9:
+     username: Luke
+     password: Skywalker
+     firstname: Hilariya
+     lastname: Warmer
+     startdate: 2017-12-12
+     email: hilari27@gmail.com
+     lastname_newname: Kulera
+     emp_full_name: Hilariya Warmer
+     new_emp_name: Hilariya Kulera
+     repeater_path: .//*[@id='employee-list']/li[contains(text(),'Hilariya Warmer')]
+
+
+Testdata10:
+     username: Luke
+     password: Skywalker
+     startdate: 2017-12-12
+
+Testdata11:
+     username: Luke
+     password: Skywalker
+     startdate: 201712-12
+
+Testdata12:
+     username: Luke
+     password: Skywalker
+     email: test@gmail.com
+
+Testdata13:
+     username: Luke
+     password: Skywalker
+     email: testcom
+
+CreateEmp1:
+     username: Luke
+     password: Skywalker
+     firstname: selectedEmployee.firstName
+     lastname: selectedEmployee.lastName
+     startdate: selectedEmployee.startDate
+     email: selectedEmployee.email
+
+CreateEmp2:
+     username: Luke
+     password: Skywalker
+     firstname: Vilia
+     lastname: Hook
+     startdate: 2018-01-21
+     invalid_startdate: 20180121
+     email: vilia.hook@gmail.com
+     emp_full_name: Vilia Hook
+
+
