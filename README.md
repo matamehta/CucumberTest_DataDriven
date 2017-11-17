@@ -12,16 +12,12 @@ Automate your test cases with minimal coding.
 Locate element using NgWebdriver
 [Here ](https://github.com/paul-hammant/ngWebDriver).
 
-TestCases 
----------------------
-[Details](https://mobtestmanagement.testrail.net/index.php?/suites/view/1&group_by=cases:section_id&group_order=asc&group_id=2)
-
 Testdata
 ----------------------------------
 
 YAML file is used to store test data and passed as parameter to cucumber test [More details](https://learn.getgrav.org/advanced/yaml)
 
-Credentials : suchita.eu@gmail.com/Test123$
+
  
 
 Documentation

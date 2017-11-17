@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d52ced9-8c2b-4177-8e7c-ca1246ce01fb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_mkolisnyk_cucumber_report_generator_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_mkolisnyk_cucumber_reporting_maven_plugin_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_CR1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xhtmlrenderer_flying_saucer_core_9_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xhtmlrenderer_flying_saucer_pdf_9_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_15.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/installation.md" afterPath="$PROJECT_DIR$/doc/installation.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/selenium-cucumber-java.iml" afterPath="$PROJECT_DIR$/selenium-cucumber-java.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seleniumTest.iml" afterPath="$PROJECT_DIR$/seleniumTest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/env/Env.java" afterPath="$PROJECT_DIR$/src/main/java/env/Env.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/seleniumcucumber/methods/AssertionMethods.java" afterPath="$PROJECT_DIR$/src/main/java/info/seleniumcucumber/methods/AssertionMethods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/seleniumcucumber/methods/NavigateMethods.java" afterPath="$PROJECT_DIR$/src/main/java/info/seleniumcucumber/methods/NavigateMethods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/seleniumcucumber/stepdefinitions/UserStepDefinitions.java" afterPath="$PROJECT_DIR$/src/main/java/info/seleniumcucumber/stepdefinitions/UserStepDefinitions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stepDefintions/Hooks.java" afterPath="$PROJECT_DIR$/src/test/java/stepDefintions/Hooks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/stepDefintions/RunSmokeTest.java" afterPath="$PROJECT_DIR$/src/test/java/stepDefintions/RunSmokeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/CreateEmployee.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/CreateEmployee.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/DeleteEmp.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/DeleteEmp.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/EditEmp.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/EditEmp.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/Logout.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/Logout.feature" />
-    </list>
+    <list default="true" id="7d52ced9-8c2b-4177-8e7c-ca1246ce01fb" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -590,7 +562,7 @@
       <workItem from="1510623840407" duration="2940000" />
       <workItem from="1510782698845" duration="11031000" />
       <workItem from="1510860297579" duration="1751000" />
-      <workItem from="1510862070622" duration="14695000" />
+      <workItem from="1510862070622" duration="15121000" />
     </task>
     <servers />
   </component>
@@ -627,7 +599,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171559000" />
+    <option name="totallyTimeSpent" value="171985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="82" y="-11" width="2185" height="1526" extended-state="6" />
